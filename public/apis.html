@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real Estate Booster — API status</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="nav"></div>
+<div class="container">
+  <h1>API status &amp; data refresh</h1>
+
+  <div class="grid cols-2">
+    <div class="card">
+      <h2>Scheduler</h2>
+      <dl class="kv">
+        <dt>Current job</dt><dd id="s-running">idle</dd>
+        <dt>Next auto run</dt><dd id="s-next">–</dd>
+        <dt>Last roads refresh</dt><dd id="s-last-roads">never</dd>
+        <dt>Last POIs refresh</dt><dd id="s-last-pois">never</dd>
+        <dt>Last announcements</dt><dd id="s-last-ann">never</dd>
+        <dt>Roads stored</dt><dd id="s-counts">–</dd>
+      </dl>
+      <div class="toolbar">
+        <select id="act-country" class="select">
+          <option value="">All enabled countries</option>
+          <option value="ME">Montenegro</option><option value="RS">Serbia</option><option value="MK">North Macedonia</option>
+        </select>
+        <button class="btn btn-primary" id="act-roads">Refresh roads</button>
+        <button class="btn" id="act-ann">Refresh announcements</button>
+        <button class="btn" id="act-pois">Refresh POIs</button>
+        <button class="btn" id="act-recompute">Recompute land distances</button>
+      </div>
+      <div class="muted small" id="act-msg"></div>
+      <h3>Job log</h3>
+      <pre class="log" id="s-log">–</pre>
+    </div>
+
+    <div class="card">
+      <h2>APIs</h2>
+      <div id="api-cards"></div>
+      <h3>Settings</h3>
+      <div class="grid cols-2">
+        <label class="field">Google Places API key (optional)
+          <input class="input" id="set-gkey" placeholder="not set — app runs 100% free on OSM">
+        </label>
+        <label class="field">Google monthly call cap
+          <input class="input" id="set-gcap" type="number" placeholder="5000">
+        </label>
+      </div>
+      <div class="toolbar">
+        <button class="btn" id="set-save">Save settings</button>
+        <span class="muted small" id="set-msg"></span>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="margin-top:20px">Government &amp; news sources (announcement scraping)</h2>
+  <div class="table-wrap">
+    <table class="table" id="src-table">
+      <thead><tr><th>C.</th><th>Source</th><th>Kind</th><th>Method</th><th>Last scrape</th><th>OK</th><th>New items (last)</th><th>Calls this month</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2 style="margin-top:20px">Recent call log</h2>
+  <div class="toolbar">
+    <input class="input" id="log-filter" placeholder="filter by api name (e.g. overpass)">
+    <button class="btn" id="log-reload">Reload</button>
+  </div>
+  <div class="table-wrap">
+    <table class="table" id="log-table">
+      <thead><tr><th>Time</th><th>API</th><th>Endpoint</th><th>OK</th><th>ms</th><th>Items</th><th>Note</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/apis.js"></script>
+</body>
+</html>

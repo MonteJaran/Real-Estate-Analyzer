@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  body { width: 360px; margin: 0; padding: 12px; background: #0f1419; color: #e6edf3;
+    font: 13px/1.45 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  h1 { font-size: 15px; margin: 0 0 8px; }
+  label { display: block; font-size: 11px; color: #8b98a5; margin-top: 7px; }
+  input, select, textarea { width: 100%; background: #1d2630; color: #e6edf3;
+    border: 1px solid #2b3640; border-radius: 6px; padding: 6px 8px; font: inherit; }
+  textarea { resize: vertical; }
+  .row { display: flex; gap: 8px; }
+  .row > div { flex: 1; }
+  button { margin-top: 10px; width: 100%; background: #1f4e83; color: #fff; border: 1px solid #2a6cb5;
+    border-radius: 7px; padding: 8px; font-size: 13px; cursor: pointer; }
+  button:hover { background: #275f9e; }
+  button:disabled { opacity: .5; }
+  #msg { margin-top: 8px; font-size: 12px; white-space: pre-wrap; }
+  .ok { color: #3fb950; } .err { color: #f85149; }
+  .hint { color: #8b98a5; font-size: 11px; margin-top: 4px; }
+</style>
+</head>
+<body>
+<h1>Capture land listing</h1>
+<label>Link (saved with the land) <input id="f-url" placeholder="page URL"></label>
+<label>Title <input id="f-title"></label>
+<div class="row">
+  <div><label>Price € <input id="f-price" type="number" step="any"></label></div>
+  <div><label>Size m² <input id="f-size" type="number" step="any"></label></div>
+</div>
+<div class="row">
+  <div><label>Lat <input id="f-lat" type="number" step="any" placeholder="optional"></label></div>
+  <div><label>Lon <input id="f-lon" type="number" step="any" placeholder="optional"></label></div>
+</div>
+<div class="row">
+  <div><label>Country
+    <select id="f-country">
+      <option value="">auto (from coordinates)</option>
+      <option>ME</option><option>RS</option><option>MK</option>
+      <option>BA</option><option>HR</option><option>SI</option><option>SK</option><option>AL</option><option>GR</option>
+    </select></label></div>
+  <div><label>What it has
+    <select id="f-contents"><option>land</option><option>land+house</option><option>land+other</option></select></label></div>
+</div>
+<label>Location text <input id="f-location" placeholder="e.g. Zagorič, Podgorica"></label>
+<label>Owner contact <input id="f-owner" placeholder="phone from the listing"></label>
+<label>Description <textarea id="f-desc" rows="3"></textarea></label>
+<button id="save">Save to Booster</button>
+<div id="msg"></div>
+<div class="hint">Tip: without coordinates the app can't compute road distance — copy them from the listing map (right-click → What's here in Google Maps).</div>
+<script src="popup.js"></script>
+</body>
+</html>

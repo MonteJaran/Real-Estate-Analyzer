@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real Estate Booster — Dashboard</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="nav"></div>
+<div class="container">
+  <h1>Dashboard</h1>
+  <div class="grid cols-4" id="stat-cards">
+    <div class="card"><div class="muted">Roads tracked</div><div class="big" id="stat-roads">–</div><div class="muted small" id="stat-roads-sub"></div></div>
+    <div class="card"><div class="muted">Lands captured</div><div class="big" id="stat-lands">–</div><div class="muted small" id="stat-lands-sub"></div></div>
+    <div class="card"><div class="muted">POIs near roads</div><div class="big" id="stat-pois">–</div><div class="muted small">gas, hotels, shops…</div></div>
+    <div class="card"><div class="muted">Announcements</div><div class="big" id="stat-ann">–</div><div class="muted small" id="stat-ann-sub"></div></div>
+  </div>
+
+  <h2>Corridor watchlist <span class="muted small">(from research, July 2026)</span></h2>
+  <div class="toolbar" id="proj-chips"></div>
+  <div class="table-wrap">
+    <table class="table" id="proj-table">
+      <thead><tr><th></th><th>Project</th><th>Status</th><th>Route</th><th>km</th><th>Notes</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>Where to hunt land <span class="muted small">(best sources per country)</span></h2>
+  <div class="toolbar">
+    <select class="select" id="src-country"></select>
+    <span class="muted small">Sources whose listing pages embed a map are auto-captured with exact coordinates by the extension (Alt+S).</span>
+  </div>
+  <div id="src-list" class="card"><span class="muted">Loading…</span></div>
+
+  <h2>Latest road announcements</h2>
+  <div class="card" id="ann-list"><span class="muted">Loading…</span></div>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/nav.js"></script>
+<script>
+'use strict';
+renderNav('dash');
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+const STATUS_BADGE = {
+  under_construction: 'badge-orange',
+  contracted: 'badge-blue',
+  planned: 'badge-purple',
+};
+
+let allProjects = [];
+let projCountry = '';
+
+function renderProjects() {
+  const rows = allProjects
+    .filter(p => !projCountry || p.country === projCountry)
+    .map(p => `<tr>
+      <td><span class="badge badge-blue">${esc(p.country)}</span></td>
+      <td><b>${esc(p.name)}</b></td>
+      <td><span class="badge ${STATUS_BADGE[p.status] || 'badge-purple'}">${esc(p.status.replace(/_/g,' '))}</span></td>
+      <td>${esc(p.route)}</td>
+      <td>${p.length_km || ''}</td>
+      <td class="muted small">${esc(p.notes || '')}</td>
+    </tr>`).join('');
+  document.querySelector('#proj-table tbody').innerHTML = rows || '<tr><td colspan="6" class="muted">none</td></tr>';
+}
+
+async function load() {
+  try {
+    const st = await API.get('/api/refresh/status');
+    let total = 0, parts = [];
+    for (const [c, v] of Object.entries(st.roadCounts || {})) { total += v.total; parts.push(c + ' ' + v.total); }
+    document.getElementById('stat-roads').textContent = total;
+    document.getElementById('stat-roads-sub').textContent = parts.join(' · ') || 'run "Refresh roads" to load from OpenStreetMap';
+  } catch (e) { console.error(e); }
+  try {
+    const lands = await API.get('/api/lands?limit=1');
+    document.getElementById('stat-lands').textContent = lands.total;
+    document.getElementById('stat-lands-sub').textContent = 'capture with the Chrome extension (Alt+S)';
+  } catch (e) { console.error(e); }
+  try {
+    const pois = await API.get('/api/pois');
+    document.getElementById('stat-pois').textContent = pois.length;
+  } catch (e) { console.error(e); }
+  try {
+    const anns = await API.get('/api/announcements');
+    document.getElementById('stat-ann').textContent = anns.length;
+    document.getElementById('stat-ann-sub').textContent = 'from government & news sources';
+    const list = anns.slice(0, 15).map(a =>
+      `<div style="padding:5px 0;border-bottom:1px solid var(--border)">
+        <span class="badge badge-blue">${esc(a.country||'')}</span>
+        <a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title || a.url)}</a>
+        <span class="muted small"> — ${esc(a.source_name||'')} · ${esc((a.found_at||'').slice(0,10))}</span>
+      </div>`).join('');
+    document.getElementById('ann-list').innerHTML = list ||
+      '<span class="muted">No announcements yet — press "Refresh announcements" on the API status page.</span>';
+  } catch (e) { console.error(e); }
+  try {
+    allProjects = await API.get('/api/projects');
+    const countries = [...new Set(allProjects.map(p => p.country))];
+    document.getElementById('proj-chips').innerHTML =
+      `<span class="chip active" data-c="">All</span>` +
+      countries.map(c => `<span class="chip" data-c="${c}">${c}</span>`).join('');
+    document.getElementById('proj-chips').addEventListener('click', (ev) => {
+      const chip = ev.target.closest('.chip'); if (!chip) return;
+      projCountry = chip.dataset.c;
+      document.querySelectorAll('#proj-chips .chip').forEach(x => x.classList.toggle('active', x === chip));
+      renderProjects();
+    });
+    renderProjects();
+  } catch (e) { console.error(e); }
+  loadSources();
+}
+
+// --- Where to hunt land ---
+const KIND_BADGE = { portal: 'badge-blue', agency_site: 'badge-green', facebook_group: 'badge-purple', cadastre_gis: 'badge-orange' };
+const KIND_LABEL = { portal: 'portal', agency_site: 'agency', facebook_group: 'facebook', cadastre_gis: 'cadastre' };
+let srcCountries = [];
+
+function renderSources() {
+  const iso = document.getElementById('src-country').value;
+  const c = srcCountries.find(x => x.iso2 === iso);
+  const box = document.getElementById('src-list');
+  if (!c || !c.portals || !c.portals.length) {
+    box.innerHTML = '<span class="muted">No land sources recorded for this country yet.</span>';
+    return;
+  }
+  const sorted = [...c.portals].sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  const rows = sorted.map(p => `
+    <div style="padding:7px 0;border-bottom:1px solid var(--border)">
+      <span class="badge ${KIND_BADGE[p.kind] || 'badge-blue'}">${esc(KIND_LABEL[p.kind] || 'portal')}</span>
+      <a href="${esc(p.land_search_url || p.url)}" target="_blank" rel="noopener"><b>${esc(p.name)}</b></a>
+      ${p.verified ? '<span class="badge badge-green" title="URL verified by research">✓</span>' : ''}
+      ${p.coordinates_available && !/none/i.test(p.coordinates_available) ? '<span class="badge badge-orange" title="' + esc(p.coordinates_available) + '">📍 coords</span>' : ''}
+      <div class="muted small">${esc(p.listing_fields || '')}${p.notes ? ' — ' + esc(p.notes) : ''}</div>
+    </div>`).join('');
+  const strategy = c.land_notes
+    ? `<div style="padding:8px 10px;margin-top:8px;border-left:3px solid var(--accent);background:rgba(88,166,255,.06)" class="small"><b>Strategy:</b> ${esc(c.land_notes)}</div>`
+    : '';
+  box.innerHTML = rows + strategy;
+}
+
+async function loadSources() {
+  try {
+    srcCountries = await API.get('/api/countries');
+    const sel = document.getElementById('src-country');
+    const focus = { ME: 0, RS: 1, MK: 2 };
+    const list = srcCountries.filter(c => c.enabled)
+      .sort((a, b) => ((focus[a.iso2] ?? 99) - (focus[b.iso2] ?? 99)) || a.name.localeCompare(b.name));
+    sel.innerHTML = list.map(c => `<option value="${c.iso2}">${c.iso2} — ${esc(c.name)}</option>`).join('');
+    sel.addEventListener('change', renderSources);
+    renderSources();
+  } catch (e) { console.error(e); }
+}
+load();
+</script>
+</body>
+</html>

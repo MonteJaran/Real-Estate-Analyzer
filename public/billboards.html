@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real Estate Booster — Billboards</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="nav"></div>
+<div class="container">
+  <h1>Billboard opportunities</h1>
+  <p class="muted" id="bb-strategy"></p>
+
+  <div class="grid cols-3" id="bb-rules"></div>
+
+  <h2 style="margin-top:20px">Economics used in the calculation</h2>
+  <div class="grid cols-3" id="bb-econ"></div>
+
+  <h2 style="margin-top:20px">Suggested lands for billboards</h2>
+  <div class="toolbar">
+    <select id="bb-country" class="select">
+      <option value="">All countries</option><option value="ME">Montenegro</option>
+      <option value="RS">Serbia</option><option value="MK">North Macedonia</option>
+    </select>
+    <label><input type="checkbox" id="bb-all"> show legally unsuitable too</label>
+    <button class="btn btn-primary" id="bb-reload">Recalculate</button>
+    <span class="muted small" id="bb-count"></span>
+  </div>
+  <div class="table-wrap">
+    <table class="table" id="bb-table">
+      <thead><tr>
+        <th>Score</th><th>Land</th><th>Road</th><th>Dist. m</th><th>Access pt. m</th>
+        <th>Placement</th><th>€/mo net</th><th>Setup €</th><th>Payback</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="muted small" id="bb-legal-note" style="margin-top:10px"></p>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/billboards.js"></script>
+</body>
+</html>

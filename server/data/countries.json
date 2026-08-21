@@ -1,0 +1,1607 @@
+{
+  "countries": [
+    {
+      "iso2": "ME",
+      "name": "Montenegro",
+      "enabled": true,
+      "overpass_area": "ME",
+      "keywords": [
+        "autoput",
+        "auto-put",
+        "brza saobraćajnica",
+        "brza saobracajnica",
+        "obilaznica",
+        "dionica",
+        "magistrala",
+        "izgradnja",
+        "bulevar",
+        "koridor",
+        "eksproprijacija"
+      ],
+      "road_sources": [
+        {
+          "name": "Monteput — aktuelnosti",
+          "url": "https://monteput.me/kategorija/aktuelnosti-i-informacije/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sr",
+          "verified": true
+        },
+        {
+          "name": "Uprava za saobraćaj",
+          "url": "https://www.gov.me/en/transport-directorate",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": true
+        },
+        {
+          "name": "Ministarstvo saobraćaja — vijesti",
+          "url": "https://www.gov.me/vijesti?sort=published_at&ou=81&at=1",
+          "kind": "ministry",
+          "scrape_method": "static_html",
+          "language": "sr",
+          "verified": true
+        },
+        {
+          "name": "CEJN javne nabavke",
+          "url": "https://cejn.gov.me/tenders",
+          "kind": "tender_portal",
+          "scrape_method": "needs_js",
+          "language": "sr",
+          "verified": true
+        },
+        {
+          "name": "EBRD Montenegro news",
+          "url": "https://www.ebrd.com/home/news-and-events/news/2025/montenegro-bar---boljare-highway-signing.html",
+          "kind": "eu_ifi_projects",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": true
+        },
+        {
+          "name": "EIB Montenegro projects",
+          "url": "https://www.eib.org/en/projects/country/montenegro",
+          "kind": "eu_ifi_projects",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": true
+        },
+        {
+          "name": "WBIF Bar-Boljare project",
+          "url": "https://wbif.eu/project/PRJ-MNE-TRA-005",
+          "kind": "eu_ifi_projects",
+          "scrape_method": "needs_js",
+          "language": "en",
+          "verified": false
+        },
+        {
+          "name": "Investitor.me — Mateševo-Andrijevica tag",
+          "url": "https://investitor.me/tag/autoput-matesevo-andrijevica/",
+          "kind": "news",
+          "scrape_method": "static_html",
+          "language": "sr",
+          "verified": true
+        },
+        {
+          "name": "RTV Budva — ekonomija",
+          "url": "https://www.rtvbudva.me/ekonomija",
+          "kind": "news",
+          "scrape_method": "static_html",
+          "language": "sr",
+          "verified": true
+        }
+      ],
+      "portals": [
+        {
+          "name": "Estitor",
+          "url": "https://estitor.com/me-en",
+          "land_search_url": "https://estitor.com/me-en/real-estates/purpose-sale/type-land-lot"
+        },
+        {
+          "name": "2home.me",
+          "url": "https://2home.me",
+          "land_search_url": "https://2home.me/sr-latin/montenegro/buy/land/"
+        },
+        {
+          "name": "Pazar3.me",
+          "url": "https://www.pazar3.me",
+          "land_search_url": "https://www.pazar3.me/oglasi/nekretnine/placevi-njive-farme"
+        },
+        {
+          "name": "Realitica (bot-blocked, browse manually + capture)",
+          "url": "https://www.realitica.com",
+          "land_search_url": "https://www.realitica.com/for%20sale/land/Montenegro/"
+        }
+      ],
+      "scrape_notes": "Bot-friendly: gov.me, monteput.me, investitor.me, rtvbudva.me, estitor.com, 2home.me, pazar3.me, ebrd.com, eib.org. Blocked (need headless/manual capture): cejn.gov.me (JS SPA), wbif.eu, realitica.com, vijesti.me, cdm.me, rtcg.me. Hot corridors mid-2026: Mateševo-Andrijevica (under construction, €694m), Budva bypass Markovići-Lastva Grbaljska (contracted, works autumn 2026), Tivat-Jaz boulevard (finishing), Podgorica bypass Smokovac-Tološi (design), Andrijevica-Berane-Boljare (design), Adriatic-Ionian expressway (early planning)."
+    },
+    {
+      "iso2": "RS",
+      "name": "Serbia",
+      "enabled": true,
+      "overpass_area": "RS",
+      "keywords": [
+        "autoput",
+        "auto-put",
+        "brza saobraćajnica",
+        "brza saobracajnica",
+        "ekspresni put",
+        "obilaznica",
+        "deonica",
+        "koridor",
+        "izgradnja",
+        "otvaranje",
+        "radovi",
+        "eksproprijacija",
+        "moravski",
+        "fruškogorski"
+      ],
+      "road_sources": [
+        {
+          "name": "Putevi Srbije — works",
+          "url": "https://www.putevi-srbije.rs/index.php/en/works",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": true
+        },
+        {
+          "name": "Koridori Srbije",
+          "url": "https://www.koridorisrbije.rs/lat",
+          "kind": "road_agency",
+          "scrape_method": "needs_js",
+          "language": "sr",
+          "verified": true
+        },
+        {
+          "name": "MGSI ministarstvo — aktuelnosti",
+          "url": "https://www.mgsi.gov.rs/lat/aktuelnosti",
+          "kind": "ministry",
+          "scrape_method": "static_html",
+          "language": "sr",
+          "verified": true
+        },
+        {
+          "name": "Portal javnih nabavki",
+          "url": "https://jnportal.ujn.gov.rs/",
+          "kind": "tender_portal",
+          "scrape_method": "needs_js",
+          "language": "sr",
+          "verified": true
+        },
+        {
+          "name": "WBIF Serbia",
+          "url": "https://www.wbif.eu/beneficiaries/serbia",
+          "kind": "eu_ifi_projects",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": true
+        },
+        {
+          "name": "EBRD projects (Serbia filter)",
+          "url": "https://www.ebrd.com/work-with-us/project-finance/project-summary-documents.html?filterCountry=Serbia",
+          "kind": "eu_ifi_projects",
+          "scrape_method": "needs_js",
+          "language": "en",
+          "verified": true
+        },
+        {
+          "name": "eKapija — auto-putevi infomap",
+          "url": "https://www.ekapija.com/infomap/4/izgradnja-auto-puteva-i-brzih-puteva-u-srbiji-i-regionu",
+          "kind": "news",
+          "scrape_method": "static_html",
+          "language": "sr",
+          "verified": true
+        },
+        {
+          "name": "N1 — tag autoput",
+          "url": "https://n1info.rs/tag/autoput/",
+          "kind": "news",
+          "scrape_method": "static_html",
+          "language": "sr",
+          "verified": true
+        }
+      ],
+      "portals": [
+        {
+          "name": "Halo oglasi (needs browser headers; ads embed lat/lng)",
+          "url": "https://www.halooglasi.com",
+          "land_search_url": "https://www.halooglasi.com/nekretnine/prodaja-zemljista"
+        },
+        {
+          "name": "4zida (7k+ land listings; JSON API at api.4zida.rs)",
+          "url": "https://www.4zida.rs",
+          "land_search_url": "https://www.4zida.rs/prodaja-placeva"
+        },
+        {
+          "name": "Nekretnine.rs",
+          "url": "https://www.nekretnine.rs",
+          "land_search_url": "https://www.nekretnine.rs/stambeni-objekti/zemljista/lista/po-stranici/10/"
+        }
+      ],
+      "scrape_notes": "halooglasi.com and wbif.eu return 403 without Chrome-like User-Agent+Accept headers; with them they serve clean HTML. halooglasi detail pages embed exact lat/lng (GeoLocationRPT JSON) — best coordinate source. koridorisrbije.rs is an AngularJS SPA (needs JS). Hot corridors mid-2026: Morava Corridor A5 (final sections 2026), Fruška Gora Corridor + Novi Sad Danube bridge, Belgrade-Zrenjanin-Novi Sad (first section end-2026), Kuzmin-Sremska Rača + Sava bridge (opening ~Oct 2026), Niš-Merdare Phase 1, Vožd Karađorđe expressway (works from spring 2026), Belgrade bypass Sector C (planning, Grocka/Pančevo land impact), Osmeh Vojvodine (~185 km, early works), Požega-Boljare (planning, joint with ME)."
+    },
+    {
+      "iso2": "MK",
+      "name": "North Macedonia",
+      "enabled": true,
+      "overpass_area": "MK",
+      "keywords": [
+        "автопат",
+        "експресен пат",
+        "коридор",
+        "изградба",
+        "обиколница",
+        "autopat",
+        "koridor",
+        "izgradba",
+        "corridor 8",
+        "corridor 10d"
+      ],
+      "road_sources": [
+        {
+          "name": "JPDP / PE State Roads — projects",
+          "url": "https://roads.org.mk/proekti",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "mk",
+          "verified": true
+        },
+        {
+          "name": "JPDP — English news (monthly Corridor 8/10d supervision reports)",
+          "url": "https://roads.org.mk/en/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": true
+        },
+        {
+          "name": "Ministry of Transport — novosti",
+          "url": "https://mtc.gov.mk/mk-MK/odnosi-so-javnost/novosti",
+          "kind": "ministry",
+          "scrape_method": "static_html",
+          "language": "mk",
+          "verified": true
+        },
+        {
+          "name": "e-Nabavki procurement",
+          "url": "https://e-nabavki.gov.mk/",
+          "kind": "tender_portal",
+          "scrape_method": "needs_js",
+          "language": "mk",
+          "verified": false
+        },
+        {
+          "name": "WBIF MK transport grants",
+          "url": "https://www.wbif.eu/investmentgrants/WB-IG03-MKD-TRA-03",
+          "kind": "eu_ifi_projects",
+          "scrape_method": "needs_js",
+          "language": "en",
+          "verified": false
+        },
+        {
+          "name": "EBRD Corridor VIII financing",
+          "url": "https://www.ebrd.com/home/news-and-events/news/2021/ebrd-and-eu-support-construction-of-corridor-viii-in-north-macedonia.html",
+          "kind": "eu_ifi_projects",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": true
+        },
+        {
+          "name": "Meta.mk news agency",
+          "url": "https://meta.mk/",
+          "kind": "news",
+          "scrape_method": "static_html",
+          "language": "mk",
+          "verified": true
+        },
+        {
+          "name": "MIA state news agency (EN)",
+          "url": "https://mia.mk/en/",
+          "kind": "news",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": true
+        }
+      ],
+      "portals": [
+        {
+          "name": "Pazar3.mk (bot-blocked — browse + capture)",
+          "url": "https://www.pazar3.mk/",
+          "land_search_url": "https://www.pazar3.mk/oglasi/zivealista/placovi-nivi-farmi"
+        },
+        {
+          "name": "Reklama5 (bot-blocked — browse + capture)",
+          "url": "https://reklama5.com/",
+          "land_search_url": "https://reklama5.com/search?cat=placovi-nivi"
+        },
+        {
+          "name": "VipMarket5 (scrape-friendly)",
+          "url": "https://www.vipmarket5.mk/",
+          "land_search_url": "https://www.vipmarket5.mk/search/%D0%9D%D0%B8%D0%B2%D0%B8-%D0%9F%D0%BB%D0%B0%D1%86%D0%BE%D0%B2%D0%B8/cid/9"
+        },
+        {
+          "name": "MarketPlus.mk",
+          "url": "https://marketplus.mk/",
+          "land_search_url": "https://marketplus.mk/?category=21-placevi-nivi-zemjiste"
+        }
+      ],
+      "scrape_notes": "roads.org.mk is the anchor source — WordPress, trilingual, monthly Corridor 8/10d supervision-engineer progress reports in /en/ news. Bot-blocked (headless/manual): pazar3.mk, reklama5.com, e-nabavki.gov.mk, wbif.eu, biznisvesti.mk. vipmarket5.mk is the most scrape-friendly land portal. Pipeline: Kičevo-Ohrid opens END 2026, Prilep-Bitola end 2027, Bechtel-Enka Corridor 8 sections 2028-29 — 1-3 year appreciation window around Kičevo, Bukojčani, Struga, Prilep, Bitola interchanges."
+    },
+    {
+      "iso2": "BA",
+      "name": "Bosnia and Herzegovina",
+      "enabled": true,
+      "overpass_area": "BA",
+      "keywords": [
+        "autoput",
+        "auto-put",
+        "autocesta",
+        "brza cesta",
+        "obilaznica",
+        "dionica",
+        "koridor 5c",
+        "koridor vc",
+        "izgradnja"
+      ],
+      "road_sources": [
+        {
+          "name": "JP Autoceste FBiH - Projects currently under construction",
+          "url": "https://www.jpautoceste.ba/en/projects-currently-under-construction/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "en (also bs)",
+          "verified": true
+        },
+        {
+          "name": "JP Autoceste FBiH - News",
+          "url": "https://www.jpautoceste.ba/en/category/news/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "en (also bs)",
+          "verified": false
+        },
+        {
+          "name": "Autoputevi Republike Srpske (RS motorway operator)",
+          "url": "https://autoputevirs.com/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sr",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "OLX.ba",
+          "url": "https://olx.ba/",
+          "land_search_url": "https://olx.ba/pretraga?kategorija=23",
+          "listing_fields": "Dominant BiH classifieds; land category (zemljista). Returned HTTP 403 to fetcher - bot-blocked, needs headless browser or API.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "Corridor Vc is by far the dominant land-value driver; both entity operators (FBiH and RS) publish project pages. FBiH pages verified as scrapable static HTML."
+    },
+    {
+      "iso2": "HR",
+      "name": "Croatia",
+      "enabled": true,
+      "overpass_area": "HR",
+      "keywords": [
+        "autocesta",
+        "brza cesta",
+        "obilaznica",
+        "dionica",
+        "koridor",
+        "izgradnja",
+        "ekspresna cesta"
+      ],
+      "road_sources": [
+        {
+          "name": "Hrvatske autoceste (HAC) - Novosti (news)",
+          "url": "https://www.hac.hr/hr/odnosi-s-javnoscu/novosti",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "hr",
+          "verified": true
+        },
+        {
+          "name": "Hrvatske autoceste (HAC) - Program i planovi",
+          "url": "https://www.hac.hr/hr/o-nama/poslovne-informacije/program-i-planovi",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "hr",
+          "verified": false
+        },
+        {
+          "name": "Hrvatske ceste (state roads operator)",
+          "url": "https://hrvatske-ceste.hr/hr/novosti",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "hr",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Njuskalo",
+          "url": "https://www.njuskalo.hr/",
+          "land_search_url": "https://www.njuskalo.hr/prodaja-zemljista",
+          "listing_fields": "Croatia's largest classifieds; land-for-sale category. Fetch blocked entirely (bot protection) - needs headless browser/proxy.",
+          "verified": false
+        },
+        {
+          "name": "Index Oglasi",
+          "url": "https://www.index.hr/oglasi",
+          "land_search_url": "https://www.index.hr/oglasi/zemljista/gid/3097",
+          "listing_fields": "Second-tier portal, alternative if Njuskalo blocking is too aggressive. Not fetch-verified.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "HAC news page verified static HTML and updated frequently - good primary feed. Motorway network largely complete, so value-driver projects are widenings and the A7 coastal extension."
+    },
+    {
+      "iso2": "SI",
+      "name": "Slovenia",
+      "enabled": true,
+      "overpass_area": "SI",
+      "keywords": [
+        "avtocesta",
+        "hitra cesta",
+        "obvoznica",
+        "gradnja",
+        "odsek",
+        "tretja razvojna os"
+      ],
+      "road_sources": [
+        {
+          "name": "DARS - Infrastrukturni projekti",
+          "url": "https://www.dars.si/Infrastrukturni_projekti",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sl",
+          "verified": true
+        },
+        {
+          "name": "DARS - Sporocila za javnost (press releases)",
+          "url": "https://www.dars.si/Sporocila_za_javnost/1/splosne_novice",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sl",
+          "verified": false
+        },
+        {
+          "name": "DARS - Tretja razvojna os project page",
+          "url": "https://www.dars.si/Infrastrukturni_projekti/Tretja_razvojna_os",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sl",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Nepremicnine.net",
+          "url": "https://www.nepremicnine.net/",
+          "land_search_url": "https://www.nepremicnine.net/oglasi-prodaja/zemljisce/",
+          "listing_fields": "Slovenia's leading property portal; land (zemljisce) sale search. HTTP 403 to fetcher - bot-blocked, needs headless browser.",
+          "verified": false
+        },
+        {
+          "name": "Bolha.com",
+          "url": "https://www.bolha.com/",
+          "land_search_url": "https://www.bolha.com/prodaja-zemljista",
+          "listing_fields": "General classifieds alternative (same group as Njuskalo, likely same bot protection). Not fetch-verified.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "DARS project hub verified static HTML. The Third Development Axis (north Koroska and south Bela krajina) is the main new-corridor land opportunity in Slovenia."
+    },
+    {
+      "iso2": "SK",
+      "name": "Slovakia",
+      "enabled": true,
+      "overpass_area": "SK",
+      "keywords": [
+        "diaľnica",
+        "rýchlostná cesta",
+        "obchvat",
+        "výstavba",
+        "úsek"
+      ],
+      "road_sources": [
+        {
+          "name": "NDS (Narodna dialnicna spolocnost) - Stavby / Vystavba",
+          "url": "https://www.ndsas.sk/stavby/vystavba",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sk",
+          "verified": true
+        }
+      ],
+      "portals": [
+        {
+          "name": "Nehnutelnosti.sk",
+          "url": "https://www.nehnutelnosti.sk",
+          "land_search_url": "https://www.nehnutelnosti.sk/vysledky/pozemky/predaj",
+          "listing_fields": "Slovakia's top portal; server-rendered, ~13,300 land listings with price, m2, district, agency; scrape-friendly.",
+          "verified": true
+        }
+      ],
+      "scrape_notes": "NDS vystavba page is static HTML and lists exactly the in-construction portfolio — best single scrape target in the batch alongside autobahn.de."
+    },
+    {
+      "iso2": "AL",
+      "name": "Albania",
+      "enabled": true,
+      "overpass_area": "AL",
+      "keywords": [
+        "autostrada",
+        "autostradë",
+        "rruga",
+        "bypass",
+        "ndërtim",
+        "korridori",
+        "unaza"
+      ],
+      "road_sources": [
+        {
+          "name": "Autoriteti Rrugor Shqiptar (ARRSH) - Projects, government-funded",
+          "url": "http://www.arrsh.gov.al/projekte-financim-qeverise-shqiptare.html",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sq",
+          "verified": true
+        },
+        {
+          "name": "ARRSH homepage / announcements (Njoftimet e Fundit)",
+          "url": "http://www.arrsh.gov.al/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sq",
+          "verified": true
+        },
+        {
+          "name": "ARRSH - Foreign-financed projects",
+          "url": "http://www.arrsh.gov.al/projekte-financim-huaj-donacione.html",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sq",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "MerrJep Albania",
+          "url": "https://www.merrjep.al/",
+          "land_search_url": "https://www.merrjep.al/kategoria/patundshmeri-vendbanime/troje-toka",
+          "listing_fields": "Top Albanian classifieds; land/plots category. HTTP 403 to fetcher - bot-blocked, needs headless browser.",
+          "verified": false
+        },
+        {
+          "name": "Century21 Albania",
+          "url": "https://www.century21albania.com/",
+          "land_search_url": "https://www.century21albania.com/en/properties?type=land&status=sale",
+          "listing_fields": "Structured agency portal alternative with English UI. Not fetch-verified; URL pattern may need adjustment.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "arrsh.gov.al redirects https->http www; WordPress-based, scrapable, but project lists are split across subpages (in-development / design / completed). Verified pages loaded fine."
+    },
+    {
+      "iso2": "GR",
+      "name": "Greece",
+      "enabled": true,
+      "overpass_area": "GR",
+      "keywords": [
+        "αυτοκινητόδρομος",
+        "οδικός άξονας",
+        "παράκαμψη",
+        "κατασκευή",
+        "motorway",
+        "highway"
+      ],
+      "road_sources": [
+        {
+          "name": "Ypodomes.com - Autokinitodromoi (motorways) news category",
+          "url": "https://ypodomes.com/category/aytokinitodromoi/",
+          "kind": "news",
+          "scrape_method": "static_html",
+          "language": "el",
+          "verified": true
+        },
+        {
+          "name": "Ministry of Infrastructure and Transport (news)",
+          "url": "https://yme.gov.gr/",
+          "kind": "ministry",
+          "scrape_method": "static_html",
+          "language": "el",
+          "verified": false
+        },
+        {
+          "name": "Egnatia Odos SA - projects",
+          "url": "https://www.egnatia.eu/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "el/en",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Spitogatos",
+          "url": "https://www.spitogatos.gr/",
+          "land_search_url": "https://www.spitogatos.gr/en/for_sale-land/greece",
+          "listing_fields": "Greece's largest property portal; land search confirmed but page serves an explicit bot-detection block - needs headless browser/residential proxy.",
+          "verified": false
+        },
+        {
+          "name": "XE.gr",
+          "url": "https://www.xe.gr/",
+          "land_search_url": "https://www.xe.gr/property/search?geo_place_ids[]=ChIJY2xxEcdKWxMRHS2a3AUZkfo&item_type=re_land&transaction_name=sell",
+          "listing_fields": "Second-largest portal; likely similar bot protection. Not fetch-verified; land item_type=re_land.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "Greece has no single motorway agency (concession model), so ypodomes.com (verified, static HTML, very active) is the best aggregated feed; supplement with ministry and Egnatia Odos SA pages. Both major land portals are bot-protected."
+    },
+    {
+      "iso2": "XK",
+      "name": "Kosovo",
+      "enabled": true,
+      "overpass_area": "XK",
+      "keywords": [
+        "autostrada",
+        "rruga",
+        "ndërtim",
+        "korridori"
+      ],
+      "road_sources": [
+        {
+          "name": "Ministria e Infrastruktures dhe Transportit - Lajme (news)",
+          "url": "https://www.mit-ks.net/sq/lajme",
+          "kind": "ministry",
+          "scrape_method": "static_html",
+          "language": "sq",
+          "verified": true
+        },
+        {
+          "name": "MIT Kosovo homepage",
+          "url": "https://www.mit-ks.net/",
+          "kind": "ministry",
+          "scrape_method": "static_html",
+          "language": "sq",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "MerrJep Kosova",
+          "url": "https://www.merrjep.com/",
+          "land_search_url": "https://www.merrjep.com/kategoria/patundshmeri-vendbanime/troje-toka",
+          "listing_fields": "Largest Kosovo classifieds; troje/toka = plots/land category. HTTP 403 to fetcher - bot-blocked, needs headless browser.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "No separate motorway agency - the Ministry (mit-ks.net) is the primary official source, verified static HTML with paginated news. R6 Prishtina-Elez Han and R7 Morine-Merdare backbone already operational."
+    },
+    {
+      "iso2": "AT",
+      "name": "Austria",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "AT",
+      "keywords": [
+        "autobahn",
+        "schnellstraße",
+        "umfahrung",
+        "neubau",
+        "spatenstich"
+      ],
+      "road_sources": [
+        {
+          "name": "ASFINAG Bauprojekte (project finder)",
+          "url": "https://www.asfinag.at/bauen-erhalten/bauprojekte/",
+          "kind": "road_agency",
+          "scrape_method": "needs_js",
+          "language": "de",
+          "verified": false
+        },
+        {
+          "name": "ASFINAG Bauprogramm 2026-2031 (PDF overview of all projects)",
+          "url": "https://media.asfinag.at/media/eatpxfa2/uebersicht-bauprojekte-2026-2031.pdf",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "de",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "willhaben.at",
+          "url": "https://www.willhaben.at",
+          "land_search_url": "https://www.willhaben.at/iad/immobilien/grundstuecke/grundstueck-angebote",
+          "listing_fields": "Austria's dominant classifieds portal; fetch blocked (bot protection) — needs headless browser or API workaround. Listings have price, area m2, municipality.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "ASFINAG project list is JS-rendered (Angular-style templates); scrape via their JSON API behind the page or the annual Bauprogramm PDF. Individual project pages (e.g. /bauen-erhalten/bauprojekte/s-1-...) are static."
+    },
+    {
+      "iso2": "DE",
+      "name": "Germany",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "DE",
+      "keywords": [
+        "autobahn",
+        "neubau",
+        "ortsumgehung",
+        "bundesstraße",
+        "lückenschluss"
+      ],
+      "road_sources": [
+        {
+          "name": "Die Autobahn GmbH - Projektuebersicht",
+          "url": "https://www.autobahn.de/planen-bauen/projektuebersicht",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "de",
+          "verified": true
+        }
+      ],
+      "portals": [
+        {
+          "name": "ImmobilienScout24",
+          "url": "https://www.immobilienscout24.de",
+          "land_search_url": "https://www.immobilienscout24.de/Suche/de/grundstueck-kaufen",
+          "listing_fields": "Germany's #1 portal; returns HTTP 401 to plain fetch (heavy bot protection). Listing fields: price, plot m2, location, development status.",
+          "verified": false
+        },
+        {
+          "name": "Immowelt",
+          "url": "https://www.immowelt.de",
+          "land_search_url": "https://www.immowelt.de/liste/deutschland/grundstuecke/kaufen",
+          "listing_fields": "Second-largest portal; URL pattern known but not fetch-verified; also uses bot protection.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "autobahn.de project overview is server-rendered with status labels (In Umsetzung / In Planung / Abgeschlossen) and paginates 381 projects — good scrape target."
+    },
+    {
+      "iso2": "CH",
+      "name": "Switzerland",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "CH",
+      "keywords": [
+        "autobahn",
+        "umfahrung",
+        "nationalstrasse",
+        "autoroute",
+        "contournement"
+      ],
+      "road_sources": [
+        {
+          "name": "ASTRA - Ausbauschritt 2027 (national road expansion programme)",
+          "url": "https://www.astra.admin.ch/de/ausbauschritt-2027",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "de",
+          "verified": true
+        },
+        {
+          "name": "ASTRA construction sites/projects page (legacy URL, restructured)",
+          "url": "https://www.astra.admin.ch/astra/de/home/themen/nationalstrassen/baustellen.html",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "de",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Homegate",
+          "url": "https://www.homegate.ch",
+          "land_search_url": "https://www.homegate.ch/kaufen/grundstueck/schweiz/trefferliste",
+          "listing_fields": "Top Swiss portal; returns HTTP 403 to plain fetch (bot-blocked). Sister portal immoscout24.ch has same owner (SMG) and similar protection.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "Switzerland has few greenfield motorways; expansion pipeline is politically constrained after the Nov 2024 'no' vote. ASTRA restructured its site in 2025/26 — old deep links 404; autobahnschweiz.ch (project portal) has a TLS cert issue when fetched directly."
+    },
+    {
+      "iso2": "IT",
+      "name": "Italy",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "IT",
+      "keywords": [
+        "autostrada",
+        "tangenziale",
+        "superstrada",
+        "cantiere",
+        "nuovo tratto"
+      ],
+      "road_sources": [
+        {
+          "name": "ANAS",
+          "url": "https://www.stradeanas.it/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "it",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Immobiliare.it",
+          "url": "https://www.immobiliare.it/",
+          "land_search_url": "https://www.immobiliare.it/vendita-terreni/"
+        }
+      ]
+    },
+    {
+      "iso2": "FR",
+      "name": "France",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "FR",
+      "keywords": [
+        "autoroute",
+        "contournement",
+        "mise en service",
+        "chantier",
+        "déviation"
+      ],
+      "road_sources": [
+        {
+          "name": "Autoroutes (ASFA)",
+          "url": "https://www.autoroutes.fr/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "fr",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Leboncoin",
+          "url": "https://www.leboncoin.fr/",
+          "land_search_url": "https://www.leboncoin.fr/cl/ventes_immobilieres/terrains"
+        }
+      ]
+    },
+    {
+      "iso2": "ES",
+      "name": "Spain",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "ES",
+      "keywords": [
+        "autovía",
+        "autopista",
+        "circunvalación",
+        "obras",
+        "variante"
+      ],
+      "road_sources": [
+        {
+          "name": "Ministerio de Transportes",
+          "url": "https://www.transportes.gob.es/",
+          "kind": "ministry",
+          "scrape_method": "static_html",
+          "language": "es",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Idealista",
+          "url": "https://www.idealista.com/",
+          "land_search_url": "https://www.idealista.com/venta-terrenos/"
+        }
+      ]
+    },
+    {
+      "iso2": "PT",
+      "name": "Portugal",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "PT",
+      "keywords": [
+        "autoestrada",
+        "circular",
+        "obras",
+        "variante"
+      ],
+      "road_sources": [
+        {
+          "name": "Infraestruturas de Portugal",
+          "url": "https://www.infraestruturasdeportugal.pt/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "pt",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Idealista PT",
+          "url": "https://www.idealista.pt/",
+          "land_search_url": "https://www.idealista.pt/comprar-terrenos/"
+        }
+      ]
+    },
+    {
+      "iso2": "BE",
+      "name": "Belgium",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "BE",
+      "keywords": [
+        "autoroute",
+        "snelweg",
+        "rondweg",
+        "contournement",
+        "werken"
+      ],
+      "road_sources": [],
+      "portals": [
+        {
+          "name": "Immoweb",
+          "url": "https://www.immoweb.be/",
+          "land_search_url": "https://www.immoweb.be/en/search/land/for-sale"
+        }
+      ]
+    },
+    {
+      "iso2": "NL",
+      "name": "Netherlands",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "NL",
+      "keywords": [
+        "snelweg",
+        "rondweg",
+        "aanleg",
+        "verbreding"
+      ],
+      "road_sources": [
+        {
+          "name": "Rijkswaterstaat",
+          "url": "https://www.rijkswaterstaat.nl/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "nl",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Funda",
+          "url": "https://www.funda.nl/",
+          "land_search_url": "https://www.funda.nl/zoeken/koop?object_type=%5B%22land%22%5D"
+        }
+      ]
+    },
+    {
+      "iso2": "LU",
+      "name": "Luxembourg",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "LU",
+      "keywords": [
+        "autoroute",
+        "contournement",
+        "chantier"
+      ],
+      "road_sources": [],
+      "portals": [
+        {
+          "name": "atHome",
+          "url": "https://www.athome.lu/",
+          "land_search_url": "https://www.athome.lu/en/buy/ground"
+        }
+      ]
+    },
+    {
+      "iso2": "GB",
+      "name": "United Kingdom",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "GB",
+      "keywords": [
+        "motorway",
+        "bypass",
+        "dual carriageway",
+        "road scheme",
+        "upgrade"
+      ],
+      "road_sources": [
+        {
+          "name": "National Highways",
+          "url": "https://nationalhighways.co.uk/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Rightmove",
+          "url": "https://www.rightmove.co.uk/",
+          "land_search_url": "https://www.rightmove.co.uk/land-for-sale.html"
+        }
+      ]
+    },
+    {
+      "iso2": "IE",
+      "name": "Ireland",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "IE",
+      "keywords": [
+        "motorway",
+        "bypass",
+        "road scheme",
+        "N-road"
+      ],
+      "road_sources": [
+        {
+          "name": "Transport Infrastructure Ireland",
+          "url": "https://www.tii.ie/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "en",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Daft.ie",
+          "url": "https://www.daft.ie/",
+          "land_search_url": "https://www.daft.ie/property-for-sale/ireland?propertyType=site"
+        }
+      ]
+    },
+    {
+      "iso2": "DK",
+      "name": "Denmark",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "DK",
+      "keywords": [
+        "motorvej",
+        "omfartsvej",
+        "anlæg",
+        "udvidelse"
+      ],
+      "road_sources": [
+        {
+          "name": "Vejdirektoratet",
+          "url": "https://www.vejdirektoratet.dk/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "da",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Boligsiden",
+          "url": "https://www.boligsiden.dk/",
+          "land_search_url": "https://www.boligsiden.dk/tilsalg/helaarsgrund"
+        }
+      ]
+    },
+    {
+      "iso2": "SE",
+      "name": "Sweden",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "SE",
+      "keywords": [
+        "motorväg",
+        "förbifart",
+        "vägbygge",
+        "utbyggnad"
+      ],
+      "road_sources": [
+        {
+          "name": "Trafikverket",
+          "url": "https://www.trafikverket.se/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "sv",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Hemnet",
+          "url": "https://www.hemnet.se/",
+          "land_search_url": "https://www.hemnet.se/bostader?item_types%5B%5D=tomt"
+        }
+      ]
+    },
+    {
+      "iso2": "NO",
+      "name": "Norway",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "NO",
+      "keywords": [
+        "motorvei",
+        "omkjøringsvei",
+        "veiutbygging",
+        "ny E"
+      ],
+      "road_sources": [
+        {
+          "name": "Statens vegvesen",
+          "url": "https://www.vegvesen.no/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "no",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Finn.no",
+          "url": "https://www.finn.no/",
+          "land_search_url": "https://www.finn.no/realestate/plots/search.html"
+        }
+      ]
+    },
+    {
+      "iso2": "FI",
+      "name": "Finland",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "FI",
+      "keywords": [
+        "moottoritie",
+        "ohikulkutie",
+        "tiehanke"
+      ],
+      "road_sources": [
+        {
+          "name": "Väylävirasto",
+          "url": "https://vayla.fi/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "fi",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Etuovi",
+          "url": "https://www.etuovi.com/",
+          "land_search_url": "https://www.etuovi.com/myytavat-tontit"
+        }
+      ]
+    },
+    {
+      "iso2": "IS",
+      "name": "Iceland",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "IS",
+      "keywords": [
+        "vegagerð",
+        "hringvegur"
+      ],
+      "road_sources": [
+        {
+          "name": "Vegagerðin",
+          "url": "https://www.vegagerdin.is/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "is",
+          "verified": false
+        }
+      ],
+      "portals": []
+    },
+    {
+      "iso2": "EE",
+      "name": "Estonia",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "EE",
+      "keywords": [
+        "maantee",
+        "ehitus",
+        "ümbersõit"
+      ],
+      "road_sources": [
+        {
+          "name": "Transpordiamet",
+          "url": "https://www.transpordiamet.ee/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "et",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "City24 EE",
+          "url": "https://www.city24.ee/",
+          "land_search_url": "https://www.city24.ee/en/real-estate-search/plots-for-sale"
+        }
+      ]
+    },
+    {
+      "iso2": "LV",
+      "name": "Latvia",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "LV",
+      "keywords": [
+        "autoceļš",
+        "būvniecība",
+        "apvedceļš"
+      ],
+      "road_sources": [
+        {
+          "name": "Latvijas Valsts ceļi",
+          "url": "https://lvceli.lv/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "lv",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "SS.com",
+          "url": "https://www.ss.com/",
+          "land_search_url": "https://www.ss.com/en/real-estate/plots-and-lands/"
+        }
+      ]
+    },
+    {
+      "iso2": "LT",
+      "name": "Lithuania",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "LT",
+      "keywords": [
+        "automagistralė",
+        "aplinkkelis",
+        "statyba",
+        "via baltica"
+      ],
+      "road_sources": [
+        {
+          "name": "Lietuvos automobilių kelių direkcija",
+          "url": "https://lakd.lt/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "lt",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Aruodas",
+          "url": "https://www.aruodas.lt/",
+          "land_search_url": "https://www.aruodas.lt/sklypai/"
+        }
+      ]
+    },
+    {
+      "iso2": "PL",
+      "name": "Poland",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "PL",
+      "keywords": [
+        "autostrada",
+        "droga ekspresowa",
+        "obwodnica",
+        "budowa",
+        "przetarg"
+      ],
+      "road_sources": [
+        {
+          "name": "GDDKiA",
+          "url": "https://www.gov.pl/web/gddkia",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "pl",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Otodom",
+          "url": "https://www.otodom.pl/",
+          "land_search_url": "https://www.otodom.pl/pl/wyniki/sprzedaz/dzialka/cala-polska"
+        }
+      ]
+    },
+    {
+      "iso2": "CZ",
+      "name": "Czechia",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "CZ",
+      "keywords": [
+        "dálnice",
+        "obchvat",
+        "výstavba",
+        "zprovoznění"
+      ],
+      "road_sources": [
+        {
+          "name": "RSD Mapa staveb (construction map of Road and Motorway Directorate)",
+          "url": "https://www.rsd.cz/mapa-staveb/",
+          "kind": "road_agency",
+          "scrape_method": "needs_js",
+          "language": "cs",
+          "verified": false
+        },
+        {
+          "name": "Zdopravy.cz - road construction news",
+          "url": "https://zdopravy.cz/rubrika/silnice/",
+          "kind": "news",
+          "scrape_method": "static_html",
+          "language": "cs",
+          "verified": false
+        },
+        {
+          "name": "Ministry of Transport - project map",
+          "url": "https://md.gov.cz/Mapa",
+          "kind": "ministry",
+          "scrape_method": "needs_js",
+          "language": "cs",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Sreality.cz",
+          "url": "https://www.sreality.cz",
+          "land_search_url": "https://www.sreality.cz/hledani/prodej/pozemky",
+          "listing_fields": "Server-rendered, scrape-friendly; ~20,800 land listings with price, CZK/m2, area, region; category filters for building plots/fields/meadows; also has a JSON API (api.sreality.cz).",
+          "verified": true
+        }
+      ],
+      "scrape_notes": "rsd.cz refuses plain HTTP fetches (connection refused for non-browser clients) — needs headless browser or use their PDF maps at kraje.rsd.cz. CZ has ~135 km of motorway under construction as of 2026, one of the busiest pipelines in the batch."
+    },
+    {
+      "iso2": "HU",
+      "name": "Hungary",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "HU",
+      "keywords": [
+        "autópálya",
+        "gyorsforgalmi",
+        "elkerülő",
+        "építés"
+      ],
+      "road_sources": [
+        {
+          "name": "beruhazas.gov.hu - Gyorsforgalmi utak projektek (state investment agency expressway projects)",
+          "url": "https://beruhazas.gov.hu/projektek/gyorsforgalmi-utak",
+          "kind": "ministry",
+          "scrape_method": "static_html",
+          "language": "hu",
+          "verified": true
+        },
+        {
+          "name": "NIF Zrt project pages (legacy, partly archived)",
+          "url": "https://nif.hu/projektek/",
+          "kind": "road_agency",
+          "scrape_method": "needs_js",
+          "language": "hu",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "ingatlan.com",
+          "url": "https://ingatlan.com",
+          "land_search_url": "https://ingatlan.com/lista/elado+telek",
+          "listing_fields": "Hungary's dominant portal; returns HTTP 403 to plain fetch (bot-blocked) — needs headless browser. Listings have price, m2, HUF/m2, settlement.",
+          "verified": false
+        }
+      ],
+      "scrape_notes": "Hungarian project ownership moved from NIF Zrt to the Construction and Transport Ministry / beruhazas.gov.hu — use the gov.hu site (static, filterable by phase) as primary. Several projects paused/rescheduled by 2023-2025 fiscal freezes; verify status per project."
+    },
+    {
+      "iso2": "RO",
+      "name": "Romania",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "RO",
+      "keywords": [
+        "autostradă",
+        "drum expres",
+        "centura",
+        "construcție",
+        "lot"
+      ],
+      "road_sources": [
+        {
+          "name": "CNAIR",
+          "url": "https://www.cnair.ro/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "ro",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Imobiliare.ro",
+          "url": "https://www.imobiliare.ro/",
+          "land_search_url": "https://www.imobiliare.ro/vanzare-terenuri-constructii"
+        }
+      ]
+    },
+    {
+      "iso2": "BG",
+      "name": "Bulgaria",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "BG",
+      "keywords": [
+        "магистрала",
+        "скоростен път",
+        "обход",
+        "строителство"
+      ],
+      "road_sources": [
+        {
+          "name": "API (Агенция Пътна инфраструктура)",
+          "url": "https://www.api.bg/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "bg",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "Imot.bg",
+          "url": "https://www.imot.bg/",
+          "land_search_url": "https://www.imot.bg/pcgi/imot.cgi?act=3&slink=none&f1=1&f2=999&f4=%D0%BF%D0%B0%D1%80%D1%86%D0%B5%D0%BB"
+        }
+      ]
+    },
+    {
+      "iso2": "MD",
+      "name": "Moldova",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "MD",
+      "keywords": [
+        "autostradă",
+        "drum",
+        "construcție",
+        "reabilitare"
+      ],
+      "road_sources": [],
+      "portals": [
+        {
+          "name": "999.md",
+          "url": "https://999.md/",
+          "land_search_url": "https://999.md/ru/list/real-estate/lands"
+        }
+      ]
+    },
+    {
+      "iso2": "UA",
+      "name": "Ukraine",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "UA",
+      "keywords": [
+        "автомагістраль",
+        "об'їзна",
+        "будівництво",
+        "відбудова"
+      ],
+      "road_sources": [],
+      "portals": [
+        {
+          "name": "DOM.RIA",
+          "url": "https://dom.ria.com/",
+          "land_search_url": "https://dom.ria.com/prodazha-uchastkov/"
+        }
+      ]
+    },
+    {
+      "iso2": "BY",
+      "name": "Belarus",
+      "enabled": false,
+      "major_roads_only": true,
+      "overpass_area": "BY",
+      "keywords": [
+        "магистраль",
+        "объездная",
+        "строительство"
+      ],
+      "road_sources": [],
+      "portals": [
+        {
+          "name": "Kufar",
+          "url": "https://www.kufar.by/",
+          "land_search_url": "https://re.kufar.by/l/uchastki"
+        }
+      ]
+    },
+    {
+      "iso2": "TR",
+      "name": "Turkey",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "TR",
+      "keywords": [
+        "otoyol",
+        "çevre yolu",
+        "yapım",
+        "inşaat"
+      ],
+      "road_sources": [
+        {
+          "name": "KGM",
+          "url": "https://www.kgm.gov.tr/",
+          "kind": "road_agency",
+          "scrape_method": "static_html",
+          "language": "tr",
+          "verified": false
+        }
+      ],
+      "portals": [
+        {
+          "name": "sahibinden",
+          "url": "https://www.sahibinden.com/",
+          "land_search_url": "https://www.sahibinden.com/satilik-arsa"
+        }
+      ]
+    },
+    {
+      "iso2": "CY",
+      "name": "Cyprus",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "CY",
+      "keywords": [
+        "αυτοκινητόδρομος",
+        "κατασκευή",
+        "motorway"
+      ],
+      "road_sources": [],
+      "portals": [
+        {
+          "name": "Bazaraki",
+          "url": "https://www.bazaraki.com/",
+          "land_search_url": "https://www.bazaraki.com/real-estate-to-buy/land-and-plots/"
+        }
+      ]
+    },
+    {
+      "iso2": "MT",
+      "name": "Malta",
+      "enabled": true,
+      "major_roads_only": true,
+      "overpass_area": "MT",
+      "keywords": [
+        "road project",
+        "bypass",
+        "infrastructure malta"
+      ],
+      "road_sources": [],
+      "portals": []
+    }
+  ]
+}

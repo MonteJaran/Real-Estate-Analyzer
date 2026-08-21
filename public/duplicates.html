@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real Estate Booster — Duplicate lands</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="nav"></div>
+<div class="container">
+  <h1>Duplicate lands (same location)</h1>
+  <p class="muted">The same plot captured from several portals or sellers. Different prices for the same land = negotiation intel — and if one listing is the owner directly (no agency), that's your 3% route.</p>
+  <div class="toolbar">
+    <label class="field">Match radius
+      <select id="d-radius" class="select">
+        <option value="0">exact same coordinates</option>
+        <option value="10">within 10 m</option>
+        <option value="30" selected>within 30 m</option>
+        <option value="100">within 100 m</option>
+        <option value="250">within 250 m</option>
+      </select>
+    </label>
+    <label class="field">Country
+      <select id="d-country" class="select">
+        <option value="">All</option><option>ME</option><option>RS</option><option>MK</option>
+      </select>
+    </label>
+    <button class="btn btn-primary" id="d-reload">Find duplicates</button>
+    <span class="muted small" id="d-count"></span>
+  </div>
+  <div id="d-groups"></div>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/duplicates.js"></script>
+</body>
+</html>

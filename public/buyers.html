@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real Estate Booster — Buyers</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="nav"></div>
+<div class="container">
+  <h1>Premium buyers</h1>
+  <p class="muted">Who pays top prices for land near new roads, what they need, and which companies are actively expanding in ME/RS/MK (researched July 2026). Use "Match buyers" on any land in the Land database to cross-reference.</p>
+
+  <h2>Buyer categories &amp; site criteria</h2>
+  <div class="table-wrap">
+    <table class="table" id="cat-table">
+      <thead><tr><th>Category</th><th>Plot size m²</th><th>Max dist. from road</th><th>Requirements</th><th>Why they pay premium</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2 style="margin-top:22px">Companies actively expanding</h2>
+  <div class="toolbar">
+    <span id="co-chips"></span>
+    <select id="co-sector" class="select right">
+      <option value="">All sectors</option>
+      <option value="fuel-ev">Fuel &amp; EV charging</option>
+      <option value="retail-food">Retail &amp; fast food</option>
+      <option value="hotel-rest">Hotels &amp; roadside</option>
+      <option value="auto-logistics">Auto &amp; logistics</option>
+    </select>
+  </div>
+  <div class="grid cols-2" id="co-grid"></div>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/buyers.js"></script>
+</body>
+</html>

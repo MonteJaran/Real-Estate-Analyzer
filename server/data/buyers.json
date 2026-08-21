@@ -1,0 +1,137 @@
+{
+  "_note": "Web-researched July 2026, scoped to ME/RS/MK. Categories = who pays premium for roadside land and what they need. Companies = actively expanding buyers. Sector codes: fuel-ev, retail-food, hotel-rest, auto-logistics.",
+  "sector_categories": {
+    "fuel-ev": ["fuel-gas-station", "ev-charging-hub", "truck-stop-rest-area"],
+    "retail-food": ["drive-thru-fast-food", "supermarket-discounter", "retail-park"],
+    "hotel-rest": ["roadside-motel-hotel"],
+    "auto-logistics": ["car-dealership", "logistics-warehouse"]
+  },
+  "categories": [
+    {
+      "category": "fuel-gas-station",
+      "label": "Fuel / gas station",
+      "min_size_m2": 1500,
+      "max_size_m2": 20000,
+      "max_distance_from_road_m": 50,
+      "requirements": "Direct road frontage mandatory (plot must abut the road). Min ~1,100-1,500 m2 for a basic urban station; full highway-format sites with shop, cafe, car+truck fueling and parking need 5,000-20,000 m2. Frontage 40-80 m; flat terrain; approved access/decel-accel lanes (on motorways access is state-controlled, often via concession through Putevi Srbije / Monteput / PESR); AADT ideally >10,000 vehicles (motorway sites >15,000-20,000); power+water; environmental permit for underground tanks; ~12 m setback from road boundary, 30-100 m from housing/schools; commercial/service zoning.",
+      "why_premium": "Fuel retail + shop margins scale directly with passing traffic, and legal access points onto new motorways are extremely scarce (usually one operator per rest area, awarded once). Jugopetrol built the first stations on Bar-Boljare; MOL/OMV/Petrol compete for the few available corridor sites in RS."
+    },
+    {
+      "category": "ev-charging-hub",
+      "label": "EV charging hub",
+      "min_size_m2": 500,
+      "max_size_m2": 5000,
+      "max_distance_from_road_m": 500,
+      "requirements": "500-1,500 m2 for a pad-site hub (4-8 fast chargers + canopy), 2,000-5,000 m2 for a flagship hub with lounge/retail. Must be within ~500 m of an exit/interchange - EV drivers will not detour; EU AFIR requires fast-charging pools every 60 km on TEN-T corridors (which pass through RS and MK). Critical requirement is grid: medium-voltage line or substation within ~1 km with 350 kW-2 MW available capacity; 24/7 access; visibility; flat paved area; amenities on site or adjacent.",
+      "why_premium": "AFIR/TEN-T compliance is creating a corridor land-grab (OMV Serbia at 13 charger locations, Petrol Group 621 charge points group-wide, Charge&GO and Tesla expanding in RS). Plots combining interchange proximity AND cheap grid connection are rarer than fuel sites."
+    },
+    {
+      "category": "drive-thru-fast-food",
+      "label": "Drive-thru fast food",
+      "min_size_m2": 2000,
+      "max_size_m2": 5000,
+      "max_distance_from_road_m": 150,
+      "requirements": "McDonald's criteria: ~4,600 m2 freestanding drive-thru site; European sites typically 2,000-4,000 m2 for a 300-400 m2 building + drive-thru lane + 20-40 parking. Prefers corner plots at signalized intersections with signage rights and ~7 m pylon height allowance; direct visibility; 40+ m frontage; AADT 15,000-25,000+ or retail-park co-location; full utilities; catchment 20,000-30,000 residents or strong transit/tourist flow.",
+      "why_premium": "Small plots, so QSR chains pay the highest absolute EUR/m2 of any roadside user for A-locations - visibility and easy in/out drive 60-70% of drive-thru revenue. McDonald's (new Subotica restaurant €1.5m) and AmRest/KFC ('openings depend exclusively on availability of locations') are actively hunting sites in RS; KFC entered ME 2023."
+    },
+    {
+      "category": "supermarket-discounter",
+      "label": "Supermarket / discounter",
+      "min_size_m2": 4000,
+      "max_size_m2": 15000,
+      "max_distance_from_road_m": 100,
+      "requirements": "Lidl's published criteria: min ~10,000 m2 purchase sites. Regional discounter format: 4,000-10,000 m2 plot for 1,200-2,500 m2 sales area + 60-120 surface parking. Needs direct entrance from a main road/roundabout, 60-100 m frontage, flat construction-ready land, commercial zoning, full utilities, catchment 8,000-15,000+ residents; discounters strongly prefer freehold purchase.",
+      "why_premium": "Discounters buy land outright and compete for the few large flat plots at town entrances: Lidl paid €2m for 9 ha in Berane (ME), €9.5m for a Skopje acquisition, bought 13,200 + 14,000 m2 plots in Podgorica; Eurospin is entering RS. Entry races push prices well above local market."
+    },
+    {
+      "category": "retail-park",
+      "label": "Retail park",
+      "min_size_m2": 15000,
+      "max_size_m2": 60000,
+      "max_distance_from_road_m": 300,
+      "requirements": "15,000-60,000 m2 plot for 5,000-30,000 m2 GLA single-storey retail boxes + shared parking (4-6 spaces/100 m2 GLA). Main road/ring road at town edge with direct access and full visibility; flat; commercial zoning; catchment 30,000+ inhabitants (STOP SHOP targets towns of 30,000-150,000); anchor pre-lets before land closing; utilities and stormwater capacity.",
+      "why_premium": "The model works only on the best road-fronting plot in town: Immofinanz/CPI STOP SHOP runs 14 fully-let parks in Serbia targeting 140 network-wide; BIG CEE opened parks in Cacak, Sabac, Bor in 2025; Balfin+BIG JV expands across Western Balkans with EBRD backing."
+    },
+    {
+      "category": "logistics-warehouse",
+      "label": "Logistics / warehouse",
+      "min_size_m2": 20000,
+      "max_size_m2": 500000,
+      "max_distance_from_road_m": 3000,
+      "requirements": "20,000-100,000 m2 for a single big-box (plot coverage ~50%); land-bank purchases up to 100+ ha (VGP Park Belgrade: 1,140,000 m2). Within 1-3 km of a motorway interchange; dead-flat terrain with good bearing capacity; heavy power (1-10 MW) and fiber; industrial zoning or free-trade zone; labor pool within 30 min; rail/intermodal proximity a bonus.",
+      "why_premium": "Per-m2 price lower than retail but volumes are huge and developers move fast with cash: CTP adding 200,000 m2 in Serbia in 2025 alone; VGP, Nelt (€100m program) and Milsped all bought interchange-adjacent land 2023-2025. Interchange proximity directly cuts trucking cost."
+    },
+    {
+      "category": "truck-stop-rest-area",
+      "label": "Truck stop / rest area",
+      "min_size_m2": 10000,
+      "max_size_m2": 50000,
+      "max_distance_from_road_m": 500,
+      "requirements": "10,000-25,000 m2 for fuel + 50 truck bays + restaurant; 25,000-50,000 m2 for a full secure truck park (100+ bays, showers, motel unit). On-motorway sites are awarded by concession from the road operator; off-motorway sites must be within ~500-1,000 m of an interchange on a heavy-freight corridor. Needs 150-300 m frontage, accel/decel lanes, heavy-duty pavement, lighting/CCTV/fencing to EU standard, sewage treatment, 24/7 staffing.",
+      "why_premium": "SEE freight corridors are saturated (border queues at Horgos reach 36h) while licensed motorway access points are one-off concessions. Fuel majors bundle truck facilities with fuel to lock in fleet-card volume and pay premium for rare private plots at key interchanges/border approaches."
+    },
+    {
+      "category": "roadside-motel-hotel",
+      "label": "Roadside motel / hotel",
+      "min_size_m2": 3000,
+      "max_size_m2": 10000,
+      "max_distance_from_road_m": 500,
+      "requirements": "3,000-6,000 m2 for an 80-120 room limited-service hotel + 1 parking/room plus bus/truck spaces; up to 10,000 m2 with restaurant and coach parking. Visible from the road and within ~500 m of an exit; pylon signage rights; full utilities; works best at interchanges serving a city, border, airport or tourist corridor (Belgrade ring, Bar-Boljare toward the coast, Corridor 8 to Ohrid).",
+      "why_premium": "Moderate premium - economics support high land prices only where transit flow overlaps a demand generator. IHG has 10 Balkan hotels in development incl. two Holiday Inn Express in Serbia; Crowne Plaza Budva signed 2025; Accor opened first Movenpick in Montenegro 2025."
+    },
+    {
+      "category": "car-dealership",
+      "label": "Car dealership",
+      "min_size_m2": 5000,
+      "max_size_m2": 20000,
+      "max_distance_from_road_m": 300,
+      "requirements": "5,000-10,000 m2 for a single-brand showroom + service + display yard; 15,000-20,000 m2 for multi-brand flagships (Delta Auto: ~17,000 m2 in New Belgrade, €30m+). Requires 80-150 m display frontage on a high-visibility arterial or motorway feeder, AADT 20,000+, flat paved land, commercial zoning, heavy power for workshops, easy in/out. The car display IS the advertising.",
+      "why_premium": "Showroom frontage substitutes for marketing spend; importer groups (Delta Auto with AVATR/Farizon, Porsche SEE) are expanding as EV brands enter the region - they pay retail-level prices for arterial frontage."
+    },
+    {
+      "category": "solar-farm",
+      "label": "Solar farm",
+      "min_size_m2": 20000,
+      "max_size_m2": 2000000,
+      "max_distance_from_road_m": 5000,
+      "requirements": "Rule of thumb 16,000-20,000 m2 per MW; minimum viable ~1-2 MW (2-4 ha), commercial projects 20-200 ha. Road frontage irrelevant beyond construction access - the binding constraint is grid: substation or MV/HV line within 1-3 km with free capacity. Flat or gentle south-facing slope, low-grade agricultural land, no shading, secure 25-30 year lease or purchase; Serbia allows state agricultural land leased up to 30 years for solar/wind.",
+      "why_premium": "Pays the LOWEST EUR/m2 but takes the LARGEST areas with long indexed leases - the fallback monetization for large flat roadside parcels that lack access rights or utilities for retail/logistics."
+    },
+    {
+      "category": "residential-developer",
+      "label": "Residential developer",
+      "min_size_m2": 5000,
+      "max_size_m2": 100000,
+      "max_distance_from_road_m": 2000,
+      "requirements": "5,000-20,000 m2 for suburban housing clusters, up to 10+ ha for master-planned schemes. Wants to be NEAR a new interchange (5-15 min drive) but NOT on the road itself - typically 300-2,000 m away, buffered from noise. Needs residential zoning (or realistic rezoning path), utilities or feasible connection, proximity to schools/retail; buys ahead of road completion to capture uplift.",
+      "why_premium": "New motorways compress commute times and re-price entire corridors: Bar-Boljare pulls Podgorica's commuter belt north, the Morava Corridor opens central-Serbia towns, Corridor 8 does the same for Skopje-Ohrid. Developers land-bank near new exits before completion - but only parcels with zoning potential."
+    }
+  ],
+  "companies": [
+    { "name": "Jugopetrol AD (HELLENiQ Energy / EKO)", "sector": "fuel-ev", "countries": ["ME"], "looking_for": "Motorway service-area and coastal/main-road plots 5,000-20,000 m2 with direct frontage and state access approval; 46 EKO stations, largest ME network.", "expansion_signals": "Opened the FIRST fuel station on the Bar-Boljare motorway (2026) and announced a second; exploring renewables in ME. Most active roadside land buyer in Montenegro.", "contact_hint": "jugopetrol.co.me; HELLENiQ group development helleniqenergy.com" },
+    { "name": "Petrol Group (Petrol d.d. Ljubljana)", "sector": "fuel-ev", "countries": ["RS", "ME"], "looking_for": "Service-station plots 2,000-10,000 m2 with arterial/motorway frontage plus EV fast-charging sites near TEN-T corridors.", "expansion_signals": "New stations in Serbia and Montenegro June 2025; 595 stations + 621 EV charge points group-wide; strategy names Serbia as growth market.", "contact_hint": "petrol.eu; Petrol d.o.o. Beograd; Petrol Crna Gora" },
+    { "name": "MOL Serbia", "sector": "fuel-ev", "countries": ["RS"], "looking_for": "Highway rest-area concessions and interchange plots 5,000-20,000 m2 (truck-friendly formats on Corridor 10).", "expansion_signals": "~70 stations in RS; reported interest in acquiring NIS retail network (2025); dedicated truck-friendly motorway station list.", "contact_hint": "molserbia.rs; MOL Group network development molgroup.info" },
+    { "name": "NIS a.d. Novi Sad (NIS Petrol / Gazprom)", "sector": "fuel-ev", "countries": ["RS"], "looking_for": "Modernization and infill of the largest RS network (~21% of Serbian stations); interchange and rest-area sites 3,000-15,000 m2; first big RS network adding EV chargers.", "expansion_signals": "Continuous network modernization; retail assets subject of MOL acquisition interest 2025 (sanctions pressure) but network investment continues.", "contact_hint": "nis.rs/en - retail network department" },
+    { "name": "OMV Serbia", "sector": "fuel-ev", "countries": ["RS"], "looking_for": "Premium motorway and city-edge station sites; converting network into fuel+EV hubs - wants interchange plots with strong grid connection.", "expansion_signals": "EV chargers at 13 locations incl. motorway sites (Doljevac, Lapovo, Bubanj Potok, Beska) with announced further expansion.", "contact_hint": "omv.co.rs - network development" },
+    { "name": "Lukoil Serbia / Lukoil Macedonia", "sector": "fuel-ev", "countries": ["RS", "MK"], "looking_for": "Arterial and transit-route station plots 2,000-8,000 m2; second-largest RS network (~114 stations), 40 stations in MK.", "expansion_signals": "Modernized Strumica and Gevgelija stations (Corridor 10 to Greece) 2024; MK network grew 32→40 stations since 2020.", "contact_hint": "lukoil.rs and lukoil.com.mk" },
+    { "name": "Makpetrol AD", "sector": "fuel-ev", "countries": ["MK"], "looking_for": "Roadside plots on new Corridor 8 and 10 sections for fuel + CNG formats; largest MK network (126 stations), incumbent bidder for new motorway service areas.", "expansion_signals": "States 'further expansion of the network' ahead, CNG focus; best positioned for rest-area tenders as Corridor 8/10d sections complete.", "contact_hint": "makpetrol.com.mk/en/about-us - HQ Skopje" },
+    { "name": "Charge&GO", "sector": "fuel-ev", "countries": ["RS"], "looking_for": "Small host sites (200-1,500 m2 or pad leases) at interchanges, retail parks and rest stops for DC fast chargers; largest domestic EV charging network in Serbia.", "expansion_signals": "EIB-backed, expanding 'at an accelerating pace' incl. Belgrade bypass locations; Tesla and IVO Chargers also scouting RS.", "contact_hint": "chargeandgo.rs - site partnership inquiries" },
+    { "name": "Lidl (Schwarz Group)", "sector": "retail-food", "countries": ["ME", "MK", "RS"], "looking_for": "Freehold plots ~10,000 m2 at town entrances with main-road frontage for 1,200-2,500 m2 stores + parking; plus 15-20 ha logistics sites. Buys land directly and publicly solicits offers.", "expansion_signals": "ME: bought 9 ha in Berane (€2m), plots in Podgorica (13,200 + 14,000 m2), sites in Zeta/Niksic/Ulcinj, seeking 200,000 m2 logistics center. MK: first stores under construction in Skopje, 3 planned in Kumanovo, €115m distribution center opening spring 2026. ~130 stores in RS with infill.", "contact_hint": "lidl.me / lidl.rs / corporate.lidl.mk 'ponuda zemljišta' (land offer) pages; realestate-lidl.com" },
+    { "name": "Eurospin (Eurospin EKO)", "sector": "retail-food", "countries": ["RS"], "looking_for": "Town-edge plots 4,000-8,000 m2 with main-road access for ~2,000 m2 discount stores + parking; new entrant needing an entire network fast.", "expansion_signals": "Entering Serbia 2025 - first locations selected, Serbian HQ recruiting since late 2024. Entry phase = most aggressive land-buying window.", "contact_hint": "eurospin.si 'predlagajte lokacijo' (propose a location); Eurospin Serbia HQ Belgrade" },
+    { "name": "Delhaize Serbia / Maxi (Ahold Delhaize)", "sector": "retail-food", "countries": ["RS"], "looking_for": "Supermarket plots 3,000-10,000 m2 and retail-park anchor units on main roads; ~556 stores with continuous openings.", "expansion_signals": "New Maxi stores in Sid (Feb 2025), Krusevac (Mar 2025); growing across formats.", "contact_hint": "delhaize.rs - Expansion & Construction department; maxi.rs" },
+    { "name": "Voli Trade", "sector": "retail-food", "countries": ["ME"], "looking_for": "Supermarket plots 2,000-8,000 m2 in coastal and Podgorica growth zones plus logistics land; ME's leading grocer (80 stores).", "expansion_signals": "EBRD equity up to €25m (Dec 2025) for a 25,600 m2 logistics-distribution center in Podgorica + expansion.", "contact_hint": "voli.me - Voli Trade d.o.o. Podgorica" },
+    { "name": "Mercator-CG / Idea (Fortenova)", "sector": "retail-food", "countries": ["ME"], "looking_for": "Store locations across all ME municipalities (400-2,500 m2 formats, plots to ~6,000 m2); consolidator absorbing local chains.", "expansion_signals": "Acquired Franca retail chain across ME, Idea network at ~200 stores; ME is Fortenova's growth market (selling Serbian retail to Alta).", "contact_hint": "fortenova.hr; idea.co.me" },
+    { "name": "McDonald's (Serbia licensee)", "sector": "retail-food", "countries": ["RS", "ME"], "looking_for": "Freestanding drive-thru sites 2,500-4,600 m2 on corners/arterials with signage rights; expanding beyond Belgrade into secondary cities.", "expansion_signals": "New restaurant in Subotica (€1.5m); global plan of 10,000 new stores by 2027 includes CEE drive-thru push.", "contact_hint": "mcdonalds.rs - kontakt/nekretnine (property offers)" },
+    { "name": "AmRest (KFC Balkans franchisee)", "sector": "retail-food", "countries": ["RS", "ME", "MK"], "looking_for": "Drive-thru pads 1,500-3,000 m2 and retail-park/mall units; openings 'depend exclusively on availability of locations that meet standards'.", "expansion_signals": "€850k invested in Belgrade KFC units, further RS expansion planned; KFC entered Montenegro late 2023, coastal expansion (Budva, Bar, Tivat) flagged by 2026.", "contact_hint": "amrest.eu/en - development/franchise; kfc.rs" },
+    { "name": "CPI Europe / Immofinanz (STOP SHOP)", "sector": "retail-food", "countries": ["RS"], "looking_for": "Retail-park sites 15,000-40,000 m2 on main roads of towns with 30,000-150,000 inhabitants; 14 STOP SHOPs in RS at 100% occupancy.", "expansion_signals": "Serbian portfolio fully leased (122,300 m2); 'further acquisitions and development projects in preparation' toward 140-location target.", "contact_hint": "cpi-europe.com / stopshop.com - CEE development team" },
+    { "name": "BIG CEE (BIG Shopping Centers)", "sector": "retail-food", "countries": ["RS", "ME"], "looking_for": "Retail-park and shopping-center land 20,000-60,000 m2 with ring-road/arterial frontage in secondary cities; owns BIG Fashion Podgorica.", "expansion_signals": "New retail parks in Cacak, Sabac, Bor opened 2025; EBRD financing; JV with Balfin for regional expansion.", "contact_hint": "bigcee.com - Serbia office Belgrade, development department" },
+    { "name": "Balfin Group", "sector": "retail-food", "countries": ["MK"], "looking_for": "Large mixed-use and retail land near Skopje ring roads (bought 155,000 m2 for East Gate); retail-park plots regionally via JV with BIG.", "expansion_signals": "€180m Skopje East Gate project phases through 2026; regional retail expansion announced; JV with BIG Europe for new retail parks.", "contact_hint": "balfin.al - real estate development; East Gate Skopje project office" },
+    { "name": "IHG Hotels & Resorts (via franchise developers)", "sector": "hotel-rest", "countries": ["RS", "ME", "MK"], "looking_for": "Sites for limited-service brands (Holiday Inn Express) 3,000-6,000 m2 near city gateways/interchanges via franchise partners who acquire the land.", "expansion_signals": "Two Holiday Inn Express in development in Serbia; Crowne Plaza Budva signed 2025; 12 Balkan hotels open, 10 in development.", "contact_hint": "development.ihg.com - Southeast Europe development team" },
+    { "name": "Accor (franchise partners e.g. Promont)", "sector": "hotel-rest", "countries": ["RS", "ME"], "looking_for": "Conversion assets and new-build sites for ibis/Movenpick-tier brands near corridors and resort access roads; land acquired by local franchise partners.", "expansion_signals": "Calls Serbia 'one of the key SEE markets with an ambitious development plan'; first Movenpick in Montenegro opened May 2025.", "contact_hint": "group.accor.com/en/hotel-development - CEE/SEE contacts" },
+    { "name": "CTP N.V.", "sector": "auto-logistics", "countries": ["RS"], "looking_for": "Industrial land 10-100 ha adjacent to motorway interchanges and free-trade zones (Belgrade, Novi Sad, Kragujevac, Jagodina, Nis); buys land banks for speculative big-box development.", "expansion_signals": "Bought land in Kragujevac FTZ (Jan 2025); 600,000 m2 standing RS portfolio + 200,000 m2 delivering 2025; building Serbia's largest logistics park in Belgrade.", "contact_hint": "ctp.eu - Serbia country office, land acquisition" },
+    { "name": "VGP N.V.", "sector": "auto-logistics", "countries": ["RS"], "looking_for": "Very large flat parcels (50-120 ha) at motorway junctions near Belgrade airport/ring road; VGP Park Belgrade is 1,140,000 m2 at the A1/A3 junction (Dobanovci).", "expansion_signals": "VGP Park Belgrade phased construction, 487,000 m2 future lettable, deliveries through H1 2025.", "contact_hint": "vgpparks.eu/location/serbia - commercial team" },
+    { "name": "Nelt Group", "sector": "auto-logistics", "countries": ["RS", "MK", "ME"], "looking_for": "Distribution-center land near Belgrade (Dobanovci hub) and regional capitals; expanding intermodal capacity - needs interchange-adjacent 5-20 ha parcels.", "expansion_signals": "€100m investment program 2024-2027 in logistics infrastructure across its markets.", "contact_hint": "nelt.com/en - HQ Dobanovci, logistics division" },
+    { "name": "Milsped Group", "sector": "auto-logistics", "countries": ["RS", "ME", "MK"], "looking_for": "Warehouse land 3-10 ha along Belgrade-Sid (E-70) and Novi Sad corridors; latest center includes 100 heavy-truck parking spots.", "expansion_signals": "New ~30,000 m2 logistics center in Krnjesevci (€15m, completed 2024-2025); new Novi Sad warehouse.", "contact_hint": "milsped.com - group HQ Belgrade" },
+    { "name": "Delta Auto Group (Delta Holding)", "sector": "auto-logistics", "countries": ["RS", "ME"], "looking_for": "High-visibility arterial plots 1-2 ha for showrooms/service (building ~17,000 m2 multi-brand dealership in New Belgrade); new EV brands need display frontage.", "expansion_signals": "Delta Holding plans €900m investments in 2025; €30m+ in the largest multi-brand dealership in Serbia; exclusive W. Balkans distributor for AVATR and Farizon EV brands.", "contact_hint": "deltaholding.rs/en - Delta Auto Group / Delta Real Estate" }
+  ]
+}

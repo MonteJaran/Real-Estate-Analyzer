@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real Estate Booster — Land database</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="nav"></div>
+<div class="container">
+  <h1>Land database</h1>
+  <div class="filter-bar">
+    <label class="field">Country
+      <select id="f-country" class="select">
+        <option value="">All</option><option>ME</option><option>RS</option><option>MK</option>
+        <option>BA</option><option>HR</option><option>SI</option><option>SK</option><option>AL</option><option>GR</option>
+      </select>
+    </label>
+    <label class="field">Contacted
+      <select id="f-contacted" class="select">
+        <option value="">All</option><option value="1">Yes</option><option value="0">No</option>
+      </select>
+    </label>
+    <label class="field">Min size m²<input id="f-minsize" class="input" type="number" style="width:100px"></label>
+    <label class="field">Max size m²<input id="f-maxsize" class="input" type="number" style="width:100px"></label>
+    <label class="field">Min price €<input id="f-minprice" class="input" type="number" style="width:100px"></label>
+    <label class="field">Max price €<input id="f-maxprice" class="input" type="number" style="width:100px"></label>
+    <label class="field">Max road dist. m<input id="f-maxdist" class="input" type="number" style="width:110px"></label>
+    <label class="field">Search<input id="f-q" class="input" type="text" placeholder="title, location, description…"></label>
+    <button id="btn-filter" class="btn btn-primary">Apply</button>
+    <button id="btn-reset" class="btn">Reset</button>
+    <span class="right"></span>
+    <button id="btn-add" class="btn">+ Add land manually</button>
+    <button id="btn-csv" class="btn">Export CSV</button>
+  </div>
+
+  <div class="muted small" id="count-line" style="margin-bottom:6px"></div>
+  <div class="table-wrap">
+    <table class="table" id="lands-table">
+      <thead><tr>
+        <th class="sortable" data-col="title">Title</th>
+        <th class="sortable" data-col="country">C.</th>
+        <th class="sortable" data-col="size_m2">Size m²</th>
+        <th class="sortable" data-col="price_eur">Price €</th>
+        <th class="sortable" data-col="price_per_m2">€/m²</th>
+        <th class="sortable" data-col="distance_to_road_m">Road dist. m</th>
+        <th class="sortable" data-col="future_price_eur">Future price €</th>
+        <th class="sortable" data-col="contents">Has</th>
+        <th class="sortable" data-col="contact_status">Contact</th>
+        <th class="sortable" data-col="captured_at">Captured</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- manual add modal -->
+<div class="modal-back" id="add-modal" style="display:none">
+  <div class="modal">
+    <h2>Add land manually</h2>
+    <div class="grid cols-2">
+      <label class="field">Title<input id="a-title" class="input"></label>
+      <label class="field">Country
+        <select id="a-country" class="select"><option>ME</option><option>RS</option><option>MK</option></select>
+      </label>
+      <label class="field">Listing URL (optional)<input id="a-url" class="input"></label>
+      <label class="field">Location text<input id="a-location" class="input"></label>
+      <label class="field">Latitude<input id="a-lat" class="input" type="number" step="any"></label>
+      <label class="field">Longitude<input id="a-lon" class="input" type="number" step="any"></label>
+      <label class="field">Size m²<input id="a-size" class="input" type="number"></label>
+      <label class="field">Price €<input id="a-price" class="input" type="number"></label>
+      <label class="field">What it has
+        <select id="a-contents" class="select"><option>land</option><option>land+house</option><option>land+other</option></select>
+      </label>
+      <label class="field">Owner contact<input id="a-owner" class="input"></label>
+    </div>
+    <label class="field" style="margin-top:8px">Description<textarea id="a-desc" class="input" rows="3"></textarea></label>
+    <div class="toolbar">
+      <span id="a-msg" class="muted small"></span>
+      <span class="right"></span>
+      <button class="btn" onclick="document.getElementById('add-modal').style.display='none'">Cancel</button>
+      <button class="btn btn-primary" id="a-save">Save</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/api.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/lands.js"></script>
+</body>
+</html>

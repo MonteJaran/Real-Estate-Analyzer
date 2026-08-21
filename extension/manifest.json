@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Real Estate Booster Capture",
+  "version": "1.1.0",
+  "description": "Capture land listings from any page (real-estate portals, Facebook groups) into your local Real Estate Booster database.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["http://localhost:3210/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Capture land listing (Alt+S)"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+S" },
+      "description": "Open the capture popup (auto-saves when coordinates are found)"
+    },
+    "capture-selection": {
+      "suggested_key": { "default": "Alt+D" },
+      "description": "Capture the selected text as a land listing (saves directly)"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

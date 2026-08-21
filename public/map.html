@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real Estate Booster — Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  html, body { height: 100%; }
+  #wrap { display: flex; flex-direction: column; height: 100vh; }
+  #mapbar { display: flex; gap: 10px; align-items: center; padding: 8px 16px;
+    background: var(--panel); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  #map { flex: 1; min-height: 0; }
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--panel); color: var(--text); }
+  .leaflet-popup-content a { color: var(--accent); }
+  .legend { display: flex; gap: 12px; align-items: center; font-size: 12px; color: var(--muted); }
+  .legend i { display: inline-block; width: 18px; height: 4px; vertical-align: middle; margin-right: 4px; border-radius: 2px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="nav"></div>
+  <div id="mapbar">
+    <label class="field">Country
+      <select id="sel-country" class="select">
+        <option value="">All</option>
+        <option value="ME">Montenegro</option>
+        <option value="RS">Serbia</option>
+        <option value="MK">North Macedonia</option>
+      </select>
+    </label>
+    <label class="field">Road status
+      <select id="sel-status" class="select">
+        <option value="">All</option>
+        <option value="construction">Under construction</option>
+        <option value="proposed">Proposed</option>
+      </select>
+    </label>
+    <label class="field"><span>&nbsp;</span>
+      <span>
+        <input type="checkbox" id="chk-lands" checked> Land
+        <input type="checkbox" id="chk-near" style="margin-left:10px"> Only land near new roads (≤5 km)
+        <input type="checkbox" id="chk-conn" style="margin-left:10px"> Connections
+        <input type="checkbox" id="chk-pois" style="margin-left:10px"> POIs
+      </span>
+    </label>
+    <span class="legend right">
+      <span><i style="background:#ff9a2e"></i>construction</span>
+      <span><i style="background:#f85149"></i>proposed</span>
+      <span><i style="background:#3fb950;height:10px;width:10px;border-radius:50%"></i>land</span>
+      <span><i style="background:#bc8cff;height:10px;width:10px;border-radius:50%"></i>connection</span>
+    </span>
+    <span id="map-msg" class="muted small"></span>
+  </div>
+  <div id="map"></div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/js/api.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/map.js"></script>
+</body>
+</html>

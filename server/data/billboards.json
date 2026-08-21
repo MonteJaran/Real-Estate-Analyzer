@@ -1,0 +1,45 @@
+{
+  "_note": "Billboard placement rules + economics for the billboard-suggestion engine. Researched July 2026 (Serbian Zakon o putevima + Serbian outdoor-advertising price lists). ME/MK laws follow the same Yugoslav-tradition road law — VERIFY locally before building anything.",
+  "legal": {
+    "RS": {
+      "motorway_mainline": "PROHIBITED — no billboards along motorways or their protective zone (60 m), except at rest areas with road-manager approval.",
+      "state_road": "Allowed at min 7 m from the road edge, WITH approval from the road manager (Putevi Srbije for state roads, municipality for local).",
+      "municipal_road": "Allowed at min 5 m from the road edge with municipal approval.",
+      "sources": ["https://www.paragraf.rs/propisi/zakon-o-putevima.html", "https://ledfactory.rs/postavljanje-bilborda-pored-autoputa/"]
+    },
+    "ME": {
+      "motorway_mainline": "Assume prohibited in the protective zone as in RS — Montenegrin Zakon o putevima (putevi.me) has analogous protective-zone rules. VERIFY with Uprava za saobraćaj before investing.",
+      "state_road": "Allowed near magistral/regional roads with road-manager approval and setback — verify exact meters locally.",
+      "municipal_road": "Municipal approval required.",
+      "sources": ["https://putevi.me/wp-content/uploads/2024/01/Zakon-o-putevima.pdf"]
+    },
+    "MK": {
+      "motorway_mainline": "Assume prohibited in the protective zone as in RS. VERIFY with JPDP (roads.org.mk).",
+      "state_road": "Road-manager approval required; verify setback meters locally.",
+      "municipal_road": "Municipal approval required.",
+      "sources": []
+    }
+  },
+  "strategy": "New motorways ban mainline billboards but CREATE high-traffic feeder roads: every interchange pushes traffic onto the connecting state/local roads. Best plays: (1) land on the access/feeder road within ~1 km of a future interchange (connection point), (2) land fronting existing state roads that the new corridor will feed, (3) town-approach arterials near new exits. Buy/lease BEFORE the road opens, erect after approval.",
+  "economics": {
+    "setup_cost_eur": {
+      "standard_12m2_single_face": 2500,
+      "standard_12m2_double_face": 4000,
+      "megaboard_30m2_plus": 9000,
+      "led_screen": 20000,
+      "note": "Steel column + panel + foundation, Serbian market 2026. Add ~€300-800/yr for permits/fees/maintenance and lighting power if lit."
+    },
+    "monthly_rent_per_face_eur": {
+      "interchange_feeder_or_town_entry": { "low": 100, "high": 350, "note": "Busy town-entry arterial / interchange feeder; city premium spots go higher (Belgrade from ~€340/mo equivalent)." },
+      "state_road_transit": { "low": 50, "high": 170, "note": "Real example: 60 m2 board on the motorway approach near Aleksinac rents at €170/mo; 28 m2 boards ~€50/face." },
+      "rural_low_traffic": { "low": 25, "high": 60, "note": "Only worth it if double-faced and near a junction." }
+    },
+    "occupancy": 0.7,
+    "land_lease_alternative_eur_month": { "low": 30, "high": 120, "note": "If you lease the SPOT to an outdoor-advertising company instead of operating it yourself — zero effort, lower income." }
+  },
+  "scoring": {
+    "max_distance_to_road_m": 1500,
+    "min_land_size_m2": 80,
+    "note": "Suitability = distance to road/connection point + road class + legality. Lands near CONNECTION points of motorways score high (feeder traffic); lands directly fronting non-motorway new roads score highest; motorway mainline frontage without a connection nearby scores zero for billboards (legal ban)."
+  }
+}

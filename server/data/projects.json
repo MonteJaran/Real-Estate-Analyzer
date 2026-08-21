@@ -1,0 +1,573 @@
+{
+  "_note": "Major road projects from web research (verified July 2026). Shown on the dashboard as corridor watchlist. Overpass supplies live geometry; this file supplies context/status for corridors that may not be mapped in OSM yet.",
+  "projects": [
+    {
+      "country": "ME",
+      "name": "Bar–Boljare motorway (A-1), Section 2: Mateševo–Andrijevica",
+      "status": "under_construction",
+      "route": "Mateševo (end of existing Smokovac–Mateševo section) → Andrijevica, toward Berane; TEN-T Route 4 / Belgrade–Bar corridor",
+      "length_km": 23,
+      "notes": "€694m design-build signed 27.02.2026 (PowerChina–STECOL–PCCD); EBRD €200m + EU grant €150m. Preparatory works June 2026; 14 mo design + 46 mo construction (~2031). Expropriation corridor = active land-value signal (Kolašin/Andrijevica/Berane)."
+    },
+    {
+      "country": "ME",
+      "name": "Budva bypass (Markovići–Lastva Grbaljska expressway)",
+      "status": "contracted",
+      "route": "Markovići (east of Budva) around Budva → Lastva Grbaljska (toward Tivat/Kotor); first segment of Adriatic-Ionian coastal expressway",
+      "length_km": 8,
+      "notes": "Contractor selected June 2026, €196m + ~€20m expropriation; 48-month deadline (~end-2029). Preparatory works autumn 2026."
+    },
+    {
+      "country": "ME",
+      "name": "Tivat–Jaz boulevard (Jadranska magistrala upgrade)",
+      "status": "under_construction",
+      "route": "Jaz beach (west of Budva) → Tivat airport zone",
+      "length_km": 16,
+      "notes": "Four lanes, 12 roundabouts; €53.9m; opening for summer 2026 season. Follow-on Tivat town boulevard in design tender."
+    },
+    {
+      "country": "ME",
+      "name": "Podgorica bypass: Smokovac–Tološi–Farmaci",
+      "status": "planned",
+      "route": "Smokovac interchange (existing motorway) via Tološi to Farmaci — western bypass of Podgorica toward Bar",
+      "length_km": 18,
+      "notes": "Conceptual design call 29.04.2026 (Monteput); TEN-T early market engagement June 2026. Not yet tendered — earliest-stage signal, northern Podgorica land impact."
+    },
+    {
+      "country": "ME",
+      "name": "Bar–Boljare Section 3: Andrijevica–Berane–Boljare",
+      "status": "planned",
+      "route": "Andrijevica via Berane to Boljare (Serbian border)",
+      "length_km": 50,
+      "notes": "Conceptual design phase only; connects to planned Serbian Požega–Boljare corridor."
+    },
+    {
+      "country": "ME",
+      "name": "Adriatic–Ionian expressway/motorway",
+      "status": "planned",
+      "route": "Croatian border → Tivat → Budva (Paštrovačka gora) → Bar → Ulcinj → Albanian border",
+      "length_km": 100,
+      "notes": "Early planning; junction study with Bar–Boljare at Paštrovačka gora tendered 2026. Long-horizon signal."
+    },
+    {
+      "country": "RS",
+      "name": "Morava Corridor motorway (A5, E-761)",
+      "status": "under_construction",
+      "route": "Pojate (A1) – Kruševac – Trstenik – Vrnjačka Banja – Kraljevo – Preljina/Čačak (A2)",
+      "length_km": 112,
+      "notes": "Bechtel-Enka. Most sections open; final Kruševac/Adrani sections targeted mid-late 2026."
+    },
+    {
+      "country": "RS",
+      "name": "Fruška Gora Corridor (Novi Sad–Ruma)",
+      "status": "under_construction",
+      "route": "Novi Sad (Petrovaradin) – Iriški Venac – Irig – Ruma (A3)",
+      "length_km": 47,
+      "notes": "Iriški Venac tunnel ~3.5 km + new Danube bridge in Novi Sad. CRBC. Completion late 2026–2027."
+    },
+    {
+      "country": "RS",
+      "name": "Belgrade–Zrenjanin–Novi Sad motorway",
+      "status": "under_construction",
+      "route": "Belgrade (Borča) – Pančevo north – Kovačica – Zrenjanin – Novi Sad",
+      "length_km": 105,
+      "notes": "Shandong Hi-Speed, ~€1.3bn. First section Belgrade–Kovačica (~30 km) targeted end-2026; full ~2030."
+    },
+    {
+      "country": "RS",
+      "name": "Kuzmin–Sremska Rača motorway + Sava bridge (Belgrade–Sarajevo highway)",
+      "status": "under_construction",
+      "route": "Kuzmin (A3) – Sremska Rača – BiH border (toward Bijeljina)",
+      "length_km": 18,
+      "notes": "Final phase; opening announced ~October 2026. Continuation Rača–Bijeljina co-financed in RS entity of BiH."
+    },
+    {
+      "country": "RS",
+      "name": "Niš–Merdare 'Peace Highway' Phase 1 (Niš–Pločnik)",
+      "status": "under_construction",
+      "route": "Niš (Merošina) – Prokuplje – Beloljin/Pločnik, toward Kuršumlija and Merdare",
+      "length_km": 33,
+      "notes": "EU/EIB/EBRD-backed; significant delays. Full route to Merdare ~77 km; Pločnik–Merdare in design."
+    },
+    {
+      "country": "RS",
+      "name": "Vožd Karađorđe expressway (phase 1)",
+      "status": "contracted",
+      "route": "Mali Požarevac (A1) – Sopot – Mladenovac – Aranđelovac – Topola – Rača – Lapovo/Velika Plana – Svilajnac – Despotovac",
+      "length_km": 83,
+      "notes": "Shandong contract May 2026 (~€1.3bn); machines deploying spring 2026. Full corridor ~242 km toward Bor."
+    },
+    {
+      "country": "RS",
+      "name": "Belgrade bypass Sector C (A9)",
+      "status": "planned",
+      "route": "Bubanj Potok – Boleč – Vinča – Danube bridge – Pančevo",
+      "length_km": 31,
+      "notes": "Spatial-plan drafting since Nov 2025. High land-value impact Grocka/Pančevo — earliest-stage signal."
+    },
+    {
+      "country": "RS",
+      "name": "Osmeh Vojvodine expressway",
+      "status": "under_construction",
+      "route": "Bački Breg (HU border) – Sombor – Kula – Vrbas – Srbobran – Bečej – Novi Bečej – Kikinda – Nakovo (RO border)",
+      "length_km": 185,
+      "notes": "Early/preparatory works at multiple points (May 2026 permit). First section Bački Breg–Kljajićevo ~2028."
+    },
+    {
+      "country": "RS",
+      "name": "Požega–Boljare motorway (A2 continuation toward Montenegro)",
+      "status": "planned",
+      "route": "Požega – Arilje – Ivanjica – Duga Poljana – Boljare (ME border); branch Požega–Užice–Kotroman (BiH) also planned",
+      "length_km": 160,
+      "notes": "Joint Serbia–Montenegro announcement 2026; design/preparation stage."
+    },
+    {
+      "country": "MK",
+      "name": "A2 Kičevo–Ohrid motorway (Corridor 8)",
+      "status": "under_construction",
+      "route": "Kičevo – Podvis – Preseka – Ohrid",
+      "length_km": 57,
+      "notes": "Sinohydro; 37 of 57 km done April 2026, government says OPENS END OF 2026. Highest-priority MK corridor for land-value change: Kičevo, Izvor, Preseka, Ohrid interchanges."
+    },
+    {
+      "country": "MK",
+      "name": "Corridor 8: Tetovo–Gostivar (section 1)",
+      "status": "under_construction",
+      "route": "Tetovo – Gostivar (second carriageway/upgrade of A2)",
+      "length_km": 17,
+      "notes": "Part of €1.3bn Bechtel-Enka package (to 2027-2029)."
+    },
+    {
+      "country": "MK",
+      "name": "Corridor 8: Gostivar–Bukojčani (section 2)",
+      "status": "under_construction",
+      "route": "Gostivar – Bukojčani, mountainous new alignment toward Kičevo",
+      "length_km": 31,
+      "notes": "Bechtel-Enka; works on 11 of 31 km (Feb 2026), in use by END 2029. Onward Bukojčani-Kičevo 10-13 km separately financed (EBRD €110m + EU €20m) — together the 42 km Gostivar-Kičevo motorway."
+    },
+    {
+      "country": "MK",
+      "name": "Corridor 8: Trebeništa–Struga–Ćafasan",
+      "status": "under_construction",
+      "route": "Trebeništa – Struga – Ćafasan (Albanian border)",
+      "length_km": 23,
+      "notes": "Bechtel-Enka, started 2024. Struga-Ćafasan alignment near Lake Ohrid faces UNESCO objections — final alignment may shift; watch JPDP monthly supervision reports before buying there."
+    },
+    {
+      "country": "MK",
+      "name": "Corridor 10d: Prilep–Bitola motorway",
+      "status": "under_construction",
+      "route": "Prilep – Pelagonija plain – Bitola",
+      "length_km": 40,
+      "notes": "Bechtel-Enka; ~half-built mid-2026, first carriageway segment traffic imminent, full completion END 2027. Flat agricultural land along Pelagonija — prime target."
+    },
+    {
+      "country": "MK",
+      "name": "A4 Skopje–Blace motorway (link to Kosovo)",
+      "status": "under_construction",
+      "route": "Skopje (Stenkovec) – Blace border crossing",
+      "length_km": 12,
+      "notes": "EBRD-financed, early works, ~4-year horizon."
+    },
+    {
+      "country": "MK",
+      "name": "A4 Štip–Radoviš expressway",
+      "status": "under_construction",
+      "route": "Štip – Radoviš",
+      "length_km": 0,
+      "notes": "Listed 'Ongoing' on roads.org.mk/proekti; eastern MK expressway program."
+    },
+    {
+      "country": "BA",
+      "name": "Corridor Vc (A1) - Medakovo-Ozimice",
+      "status": "under_construction",
+      "route": "Medakovo - Ozimice",
+      "length_km": 21.5,
+      "notes": "Contractor Cengiz Insaat (TR), EUR 362m, signed Mar 2023; part of EU-backed Corridor Vc."
+    },
+    {
+      "country": "BA",
+      "name": "Corridor Vc (A1) - Zenica gorge sections",
+      "status": "under_construction",
+      "route": "Poprikuse - Nemila - Vranduk - Ponirak - Vraca",
+      "length_km": 19,
+      "notes": "Four contiguous sections incl. 3.6 km Bosna tunnel, various contractors (Cengiz, HGG, Azvirt/Hering, Euro-Asfalt)."
+    },
+    {
+      "country": "BA",
+      "name": "Corridor Vc (A1) - Tunnel Kvanj-Buna",
+      "status": "under_construction",
+      "route": "Mostar South (Kvanj) - Buna",
+      "length_km": 5.25,
+      "notes": "China Road and Bridge Corporation consortium, contract signed Oct 2024."
+    },
+    {
+      "country": "BA",
+      "name": "Corridor Vc in Republika Srpska - Vukosavlje-Brcko",
+      "status": "under_construction",
+      "route": "Vukosavlje - Brcko",
+      "length_km": 33,
+      "notes": "RS entity motorway, Chinese contractors; part of northern Corridor Vc / Brcko link."
+    },
+    {
+      "country": "HR",
+      "name": "A7 extension - Krizisce-Jadranovo",
+      "status": "under_construction",
+      "route": "Krizisce - Jadranovo (toward Zuta Lokva)",
+      "length_km": 11,
+      "notes": "First subsection of A7 southward extension along the coast; contract signed, works underway; opens access to Crikvenica hinterland."
+    },
+    {
+      "country": "HR",
+      "name": "A1 Zagreb-Karlovac third-lane widening",
+      "status": "contracted",
+      "route": "Lucko - Karlovac",
+      "length_km": 38,
+      "notes": "Widening of Croatia's busiest section to 2x3 lanes; tender late 2025, completion targeted 2028 (contract for first works signed per HAC news)."
+    },
+    {
+      "country": "HR",
+      "name": "Split junction reconstruction and D403-type access upgrades",
+      "status": "under_construction",
+      "route": "A1 cvor Split / Dugopolje area",
+      "length_km": 5,
+      "notes": "Reconstruction and expansion of the Split interchange on A1."
+    },
+    {
+      "country": "SI",
+      "name": "Third Development Axis - North (Velenje-Slovenj Gradec)",
+      "status": "under_construction",
+      "route": "Velenje jug - Slovenj Gradec jug",
+      "length_km": 17.5,
+      "notes": "Expressway 4-lane; multiple lots under construction (e.g. Skalsko jezero and Konovo lots, EUR 55m contract)."
+    },
+    {
+      "country": "SI",
+      "name": "Third Development Axis - North (Sentrupert-Velenje)",
+      "status": "under_construction",
+      "route": "A1 Sentrupert junction - Velenje jug",
+      "length_km": 14,
+      "notes": "Connects A1 motorway to Velenje; lots progressively contracted."
+    },
+    {
+      "country": "SI",
+      "name": "Third Development Axis - South",
+      "status": "under_construction",
+      "route": "A2 Novo mesto - Osredek/Maline (toward Metlika/Crnomelj)",
+      "length_km": 5.1,
+      "notes": "First stage (Novo mesto east bypass with Revoz access) under construction; later stages to Bela krajina planned."
+    },
+    {
+      "country": "SI",
+      "name": "Karavanke Tunnel second tube (A2)",
+      "status": "under_construction",
+      "route": "Hrusica - Austrian border",
+      "length_km": 3.5,
+      "notes": "Second tube completed Mar 2026; refurbishment of the 1991 tube ongoing - limited new land impact."
+    },
+    {
+      "country": "XK",
+      "name": "R7.1 Prishtina-Gjilan-Koncul highway",
+      "status": "under_construction",
+      "route": "Prishtine - Gjilan - Dheu i Bardhe/Koncul (Serbia border)",
+      "length_km": 47,
+      "notes": "Kosovo's third highway, built in 7 segments; Prishtina-Gjilan expressway sections progressively under works/opening."
+    },
+    {
+      "country": "XK",
+      "name": "Prishtina-Merdare motorway completion (R6.1/Nis link)",
+      "status": "planned",
+      "route": "Prishtine (Besi) - Podujeve - Merdare",
+      "length_km": 22,
+      "notes": "Kosovo side of the Peace Highway toward Nis; design/EIB-EBRD supported, sections in preparation."
+    },
+    {
+      "country": "XK",
+      "name": "Prishtina-Blace / Skopje link upgrade",
+      "status": "contracted",
+      "route": "Prishtine - Blace (North Macedonia border)",
+      "length_km": 12,
+      "notes": "Contract activity on Skopje-Blace corridor referenced in MIT news; connects to NMK A4 to Skopje."
+    },
+    {
+      "country": "AL",
+      "name": "Thumana-Kashar motorway (PPP)",
+      "status": "under_construction",
+      "route": "Thumane - Vore - Kashar (Tirana)",
+      "length_km": 21,
+      "notes": "Key A1-Tirana link on the north-south corridor; concession/PPP works ongoing."
+    },
+    {
+      "country": "AL",
+      "name": "Milot-Balldren motorway (PPP)",
+      "status": "under_construction",
+      "route": "Milot - Balldren (Lezhe)",
+      "length_km": 17,
+      "notes": "Adriatic corridor segment toward Shkodra/Montenegro (Blue Corridor)."
+    },
+    {
+      "country": "AL",
+      "name": "Kardhiq-Delvine road",
+      "status": "under_construction",
+      "route": "Kardhiq - Delvine (Gjirokaster-Saranda shortcut)",
+      "length_km": 33,
+      "notes": "Long-running mountain road nearing completion; cuts Saranda access time, strong riviera land impact."
+    },
+    {
+      "country": "AL",
+      "name": "Adriatic-Ionian corridor (Blue Highway) remaining sections",
+      "status": "planned",
+      "route": "Balldren - Shkoder - Muriqan/Hani i Hotit",
+      "length_km": 40,
+      "notes": "Northern continuation toward Montenegro; feasibility/design with IFI support."
+    },
+    {
+      "country": "GR",
+      "name": "E65 Central Greece Motorway - northern section",
+      "status": "under_construction",
+      "route": "Trikala - Egnatia Odos (Grevena/Kalambaka)",
+      "length_km": 70,
+      "notes": "Final E65 stretch linking Thessaly to Egnatia; opening in stages 2025-2026, strong land impact in W. Macedonia/Thessaly."
+    },
+    {
+      "country": "GR",
+      "name": "BOAK - Northern Crete Motorway",
+      "status": "under_construction",
+      "route": "Chania - Heraklion (concession) and Hersonissos - Neapoli",
+      "length_km": 180,
+      "notes": "Crete's first true motorway; Hersonissos-Neapoli works underway, main Chania-Heraklion concession ramping up - biggest new-corridor play in Greece."
+    },
+    {
+      "country": "GR",
+      "name": "Thessaloniki Flyover (eastern ring road upgrade)",
+      "status": "under_construction",
+      "route": "Thessaloniki east ring (K5 - K12)",
+      "length_km": 13,
+      "notes": "Elevated expressway over existing ring; completion around 2027."
+    },
+    {
+      "country": "GR",
+      "name": "Patras-Pyrgos motorway (Olympia Odos extension)",
+      "status": "under_construction",
+      "route": "Patra - Pyrgos",
+      "length_km": 75,
+      "notes": "Final sections opening 2025-2026; unlocks western Peloponnese coast."
+    },
+    {
+      "country": "GR",
+      "name": "Thessaloniki-Edessa and Drama-Amfipoli vertical axes",
+      "status": "contracted",
+      "route": "Thessaloniki - Edessa / Drama - Amfipoli",
+      "length_km": 100,
+      "notes": "Two large northern Greece road projects at contractor-selection stage per ypodomes.com (mid-2026)."
+    },
+    {
+      "country": "AT",
+      "name": "S1 Wiener Aussenring Schnellstraase Schwechat-Suessenbrunn (incl. Lobautunnel)",
+      "status": "under_construction",
+      "route": "Schwechat - Suessenbrunn (Vienna outer ring closure)",
+      "length_km": 19,
+      "notes": "Open-land 10.8 km phase started spring 2026 (~EUR 500m); Lobau tunnel phase ~2030 start, EUR 2.2bn, completion to 2032/2040."
+    },
+    {
+      "country": "AT",
+      "name": "A26 Linzer Autobahn, Bauabschnitt 2",
+      "status": "under_construction",
+      "route": "Waldeggstrasse - Donau Nord/Sued (Linz Westring)",
+      "length_km": 4.7,
+      "notes": "Danube bridge section opened 2024; tunnel sections into Linz under construction into the 2030s."
+    },
+    {
+      "country": "AT",
+      "name": "S10 Muehlviertler Schnellstrasse north extension",
+      "status": "under_construction",
+      "route": "Freistadt Nord - Rainbach Nord (toward CZ border/D3 link)",
+      "length_km": 12,
+      "notes": "Continues in ASFINAG 2026-2031 programme; links to Czech D3 at Wullowitz/Dolni Dvoriste."
+    },
+    {
+      "country": "AT",
+      "name": "A5 Nord/Weinviertel Autobahn completion",
+      "status": "planned",
+      "route": "Poysbrunn - Drasenhofen - CZ border",
+      "length_km": 10,
+      "notes": "Re-added to ASFINAG construction programme 2026; connects to Czech D52 toward Brno."
+    },
+    {
+      "country": "DE",
+      "name": "A20 Kuestenautobahn",
+      "status": "under_construction",
+      "route": "Westerstede (Lower Saxony) - Bad Segeberg (Schleswig-Holstein)",
+      "length_km": 200,
+      "notes": "Germany's largest greenfield motorway project; symbolic groundbreaking in Lower Saxony, first sections in works, incl. planned Elbe tunnel at Drochtersen."
+    },
+    {
+      "country": "DE",
+      "name": "A14 Nordverlaengerung",
+      "status": "under_construction",
+      "route": "Magdeburg - Wittenberge - Schwerin",
+      "length_km": 155,
+      "notes": "Multiple sections under construction in Saxony-Anhalt, Brandenburg and Mecklenburg; closes the last big north-south gap in eastern Germany."
+    },
+    {
+      "country": "DE",
+      "name": "A100 16./17. Bauabschnitt Berlin",
+      "status": "under_construction",
+      "route": "Neukoelln - Treptower Park (- Storkower Strasse planned)",
+      "length_km": 3.2,
+      "notes": "Urban motorway extension; 16th section nearing completion, 17th section politically contested."
+    },
+    {
+      "country": "DE",
+      "name": "A8 Albaufstieg",
+      "status": "contracted",
+      "route": "Muehlhausen - Hohenstadt (Swabian Alb ascent)",
+      "length_km": 8,
+      "notes": "Planning approval Dec 2024; construction preparation underway; new tunnels and viaducts, Baden-Wuerttemberg's largest road project."
+    },
+    {
+      "country": "CH",
+      "name": "Second Gotthard road tunnel (A2)",
+      "status": "under_construction",
+      "route": "Goeschenen (UR) - Airolo (TI)",
+      "length_km": 16.9,
+      "notes": "Flagship Swiss project; second tube under construction, opening ~2029-2030, then refurbishment of the old tube."
+    },
+    {
+      "country": "CH",
+      "name": "A9 completion in Upper Valais",
+      "status": "under_construction",
+      "route": "Sierre - Visp/Brig (remaining Rhone valley sections)",
+      "length_km": 30,
+      "notes": "Last unfinished stretch of the original national road network; several sections and tunnels in works."
+    },
+    {
+      "country": "CH",
+      "name": "A1 six-lane expansion Aarau Ost - Birrfeld",
+      "status": "planned",
+      "route": "Aarau Ost - Birrfeld (AG)",
+      "length_km": 15,
+      "notes": "Part of Ausbauschritt 2027 / Verkehr '45; note the Nov 2024 referendum rejected the previous STEP 2023 package (Rhine tunnel Basel, 3rd Rosenberg tube etc.)."
+    },
+    {
+      "country": "CH",
+      "name": "A1 six-lane expansion Perly - Bernex",
+      "status": "planned",
+      "route": "Perly - Bernex (Geneva bypass)",
+      "length_km": 5,
+      "notes": "Proposed in Ausbauschritt 2027; subject to parliamentary approval and possible referendum."
+    },
+    {
+      "country": "CZ",
+      "name": "D35 Hradec Kralove - Olomouc corridor",
+      "status": "under_construction",
+      "route": "Hradec Kralove - Vysoke Myto - Mohelnice (parallel relief for D1)",
+      "length_km": 100,
+      "notes": "Multiple sections under construction; separate D35 Ulibice-Horice 16.3 km section started April 2026."
+    },
+    {
+      "country": "CZ",
+      "name": "D11 Jaromer - Trutnov (- PL border)",
+      "status": "under_construction",
+      "route": "Jaromer - Trutnov - Krkonose/Poland (links to Polish S3)",
+      "length_km": 19.6,
+      "notes": "Last missing D11 section; completion expected autumn 2029."
+    },
+    {
+      "country": "CZ",
+      "name": "D6 Prague - Karlovy Vary",
+      "status": "under_construction",
+      "route": "Krusovice - Bosov area sections toward Karlovy Vary",
+      "length_km": 30,
+      "notes": "Several sections in works; full Prague-Karlovy Vary motorway targeted ~2029."
+    },
+    {
+      "country": "CZ",
+      "name": "D3 Central Bohemia (PPP)",
+      "status": "contracted",
+      "route": "Prague (D0) - Nova Hospoda, connecting to completed South Bohemian D3 to Austria",
+      "length_km": 32,
+      "notes": "Procured as PPP; South Bohemian D3 to Dolni Dvoriste/AT border largely complete or finishing."
+    },
+    {
+      "country": "SK",
+      "name": "D1 Lietavska Lucka - Dubna Skala (Visnove tunnel)",
+      "status": "under_construction",
+      "route": "Lietavska Lucka - Dubna Skala (Zilina bypass, Bratislava-Kosice corridor)",
+      "length_km": 13.5,
+      "notes": "Includes 7.5 km Visnove tunnel, Slovakia's longest; long-delayed, in finishing phase; listed on NDS construction page."
+    },
+    {
+      "country": "SK",
+      "name": "D3 Zilina Brodno - Kysucke Nove Mesto",
+      "status": "under_construction",
+      "route": "Zilina/Brodno - Kysucke Nove Mesto (Kysuce corridor toward PL border)",
+      "length_km": 11,
+      "notes": "Key section of D3 toward Poland; listed as active construction by NDS."
+    },
+    {
+      "country": "SK",
+      "name": "R4 Presov northern bypass, phase I-II",
+      "status": "under_construction",
+      "route": "Presov zapad - Presov sever (- Kapusany)",
+      "length_km": 10,
+      "notes": "Phase I with Bikos tunnel opened; phase II in construction/procurement; Via Carpatia corridor."
+    },
+    {
+      "country": "SK",
+      "name": "D1 Turany - Hubova",
+      "status": "planned",
+      "route": "Turany - Hubova (last missing D1 link under Mala Fatra)",
+      "length_km": 13.5,
+      "notes": "Final gap on Bratislava-Kosice D1; tunnel-heavy alignment, procurement/preparation as of 2026."
+    },
+    {
+      "country": "SK",
+      "name": "D1 Bratislava - Triblavina widening",
+      "status": "under_construction",
+      "route": "Bratislava - Triblavina",
+      "length_km": 10,
+      "notes": "Capacity expansion east of Bratislava; listed on NDS construction page."
+    },
+    {
+      "country": "HU",
+      "name": "M49 expressway",
+      "status": "under_construction",
+      "route": "M3 (Ororszlany/Mateszalka area) - Okoritofulpos, ultimately toward Csenger/RO border",
+      "length_km": 28.2,
+      "notes": "New expressway toward Romania (Satu Mare); listed on beruhazas.gov.hu."
+    },
+    {
+      "country": "HU",
+      "name": "M1 widening Budapest - Gyor",
+      "status": "under_construction",
+      "route": "Budapest (M0) - Gyor, 2x3 lanes",
+      "length_km": 100,
+      "notes": "Concession-financed capacity upgrade of Hungary's busiest motorway; phased works through late 2020s."
+    },
+    {
+      "country": "HU",
+      "name": "M100 expressway",
+      "status": "under_construction",
+      "route": "Esztergom - M1 (Bicske area)",
+      "length_km": 21,
+      "notes": "New 2x2 link connecting Esztergom industrial zone (Suzuki) to M1; works started, schedule slipped with budget freezes."
+    },
+    {
+      "country": "HU",
+      "name": "M44 final stage",
+      "status": "under_construction",
+      "route": "Szentkiraly - M5 motorway (Kecskemet)",
+      "length_km": 12,
+      "notes": "Closing stage links completed M44 (Bekescsaba corridor) directly to M5."
+    },
+    {
+      "country": "HU",
+      "name": "M2 upgrade Vac area",
+      "status": "planned",
+      "route": "Vac-del - Vac-eszak (- Retsag bypass toward Hont/SK border)",
+      "length_km": 10,
+      "notes": "2x2 upgrade continuing M2 north toward Slovakia; design phase, Retsag bypass project listed on beruhazas.gov.hu."
+    }
+  ]
+}
