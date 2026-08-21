@@ -27,6 +27,9 @@ Requires Node 22+. No API keys needed. The database is created automatically at 
 | **Billboards** `/billboards.html` | Legal rules per country, rent/setup economics, and your captured lands **ranked by billboard suitability** with monthly revenue + payback calculations |
 | **API status** `/apis.html` | Every data source: last run, calls today/month, ok-rate, job log, manual refresh buttons, optional Google API key |
 
+
+<img width="1918" height="887" alt="Screenshot 2026-08-21 172042" src="https://github.com/user-attachments/assets/ffa8cedc-764d-4952-bab2-4abacf70bb4c" />
+
 ## Data flow
 
 - **Roads**: pulled from OpenStreetMap Overpass API (`highway=construction` / `highway=proposed`) per country. Geometry is stored with a point every 100 m plus detected **connection points** where the new road touches the existing network. Auto-refreshes **every 2 days at 06:00** while the app is running (plus a catch-up on startup); manual refresh anytime.
